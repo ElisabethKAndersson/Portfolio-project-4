@@ -15,7 +15,7 @@ import os
 import dj_database_url
 
 if os.path.isfile("env.py"):
-    import env.py
+    import env
 
 print("------- DATABASE URL -------")
 print(os.environ.get("DATABASE_URL"))
@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
-    'cloudinary'
+    'cloudinary',
     'presentation',
 ]
 
@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'soulspark.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgres://rqgldfxk:kV0LtYZEFkEkiPLyArTodxqmDKoDiTZn@cornelius.db.elephantsql.com/rqgldfxk"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
