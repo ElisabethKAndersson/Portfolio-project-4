@@ -1,0 +1,35 @@
+/*--------------------------------------------Base */
+.top {
+    background-color: #b3dee5;
+    padding: 100px;
+    margin: 10px;
+}
+
+.logo {
+    background: url(../images/soulsparklogo.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.home-link {
+    background-color: #ffa101;
+    margin: 0;
+}
+
+.booking-link {
+    background-color: #fae6b1;
+    margin: 0;
+}
+
+
+.prices-link {
+    background-color: #31525b;
+    margin: 0;
+}
+
+.contact-link {
+    background-color: #ffa101;
+    margin: 0;
+}

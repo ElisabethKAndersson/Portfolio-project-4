@@ -4,30 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}My amazing site{% endblock %}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            type="text/css" />
+    <link rel="stylesheet" href="../../../static/css/style.css">
+    <title>{% block title %}Soulspark{% endblock %}</title>
   </head>
 
   <body>
-    {% block sidebar %}
-    <main class="grid">
-      <div id="navbar">
-        <div class="col-4 col-sm-12 col-md-6 col-lg-4">
-          <img
-            src="../../../static/images/soulsparklogo.jfif"
-            id="logo"
-            class="logo"
-            alt="Soulspark logo"
-          />
+    {% block header %}
+    <header>
+        <div class="row no-gutters">
+            <a class="col-sm-12 col-md-4 col-lg-4 logo"a href = "/" alt="Soulspark logo">
+            </a>
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <div class="row top no-gutters">
+                </div>
+                <div class=" row links no-gutters">
+                    <div class="col">
+                        <ul id="nav" class="list-inline">
+                            <li class="col-3 list-inline-item home-link">
+                                <a href="/">Home</a>
+                            </li>
+                            <li class="col-3 list-inline-item booking-link" >
+                                <a href="/">Booking</a>
+                            </li>
+                            <li class="col-3 list-inline-item prices-link">
+                                <a href="/">Prices</a>
+                            </li>
+                            <li class="col-3 list-inline-item contact-link">
+                                <a href="/">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
         </div>
-        <div class="col-8 col-sm-12 col-md-6 col-lg-8">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Booking</a></li>
-            <li><a href="/">Contact</a></li>
-          </ul>
+        
+            <div>
+                
+            </div>
         </div>
-      </div>
-    </main>
+    </header>
     {% endblock %}
 
     <div id="content">{% block content %}{% endblock %}</div>
