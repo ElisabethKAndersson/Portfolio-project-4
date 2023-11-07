@@ -20,10 +20,12 @@ posts = [
 ]
 
 
+# Index page
 def index(request):
     return render(request, "presentation/index.html")
 
 
+# Review page
 def reviews(request):
     context = {
         'posts': posts

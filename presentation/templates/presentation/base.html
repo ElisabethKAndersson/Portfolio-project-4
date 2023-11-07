@@ -21,7 +21,7 @@
   <body>
     {% block header %}
     <header>
-      <!-- Logo and top color-->
+      <!-- Logo and top color with title-->
       <div class="row no-gutters">
         <a
           class="col-sm-12 col-md-4 col-lg-4 logo"
@@ -46,10 +46,10 @@
         <div class="col-12">
           <ul id="nav" class="list-inline menucontainer">
             <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="/"><span>Home</span></a>
+              <a href="{% url 'index' %}"><span>Home</span></a>
             </li>
             <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="/"><span>Booking</span></a>
+              <a href="{% url 'reviews' %}"><span>Reviews</span></a>
             </li>
             <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
               <a href="/"><span>Prices</span></a>
