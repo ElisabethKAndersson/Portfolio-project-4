@@ -7,3 +7,7 @@ from django.views import generic
 
 def index(request):
     return render(request, "presentation/index.html")
+
+def reviews(request):
+    return render(request, "presentation/reviews.html")
+

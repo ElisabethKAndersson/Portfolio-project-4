@@ -1,8 +1,11 @@
+body {
+    background-color: edeae5;
+}
+
 /*--------------------------------------------Base */
 header {
     background-color: #026670;
     background-size: cover;
-
 }
 
 .logo {
@@ -14,7 +17,7 @@ header {
     min-height: 250px;
 }
 
-.list-inline-item {
+.menu-link {
     background-color: #9fedd7;
     margin: 0;
 }
@@ -29,10 +32,28 @@ header {
 }
 
 #nav li {
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     padding: 0;
     height: 50px;
     padding-top: 10px;
-    border-style: double 2px white;
+}
+
+a {
+    color: black;
+}
+
+/*--------------------------------------------Index */
+
+.image {
+    background: url(../images/sussie.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 250px;
+
+    .presentation_text {
+        max-width: 500px;
+        margin-top: 100px;
+    }
 }

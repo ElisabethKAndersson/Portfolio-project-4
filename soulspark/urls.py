@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from presentation.views import index
+from presentation.views import reviews
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='index')
-
+    path('', index, name='index'),
+    path('reviews/', reviews, name='reviews'),
 ]
