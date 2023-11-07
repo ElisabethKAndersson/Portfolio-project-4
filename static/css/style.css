@@ -50,10 +50,11 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 250px;
+    min-height: 300px;
+}
 
-    .presentation_text {
-        max-width: 500px;
-        margin-top: 100px;
-    }
+.presentation_text {
+    max-width: 500px;
+    margin-left: 125px;
+    margin-top: 125px;
 }
