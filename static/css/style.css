@@ -47,7 +47,7 @@ a {
 
 .image {
     background: url(../images/sussie.jpg);
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 300px;
@@ -56,5 +56,5 @@ a {
 .presentation_text {
     max-width: 500px;
     margin-left: 125px;
-    margin-top: 125px;
+    margin-top: 50px;
 }
