@@ -11,8 +11,3 @@ def index(request):
 
 
 # Review page
-def reviews(request):
-    context = {
-        'posts': posts
-    }
-    return render(request, "presentation/reviews.html", context)

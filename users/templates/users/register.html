@@ -1,0 +1,21 @@
+{% extends "presentation/base.html" %} {% block title %}Home {%endblock %}
+<br />
+{% block content %}
+<div class="form-section">
+  <form method="POST">
+    {% csrf_token %}
+    <fieldset class="form-group">
+      <legend class="border-bottom mb-4">Create a User</legend>
+      {{ form }}
+    </fieldset>
+    <div class="form-button">
+      <button class="btn btn-warning" type="submit">Sign Up</button>
+    </div>
+  </form>
+  <div class="sign-in-instead">
+    <small class="already-account">
+      Or <a href="">Sign In</a> if you alredy have an account.
+    </small>
+  </div>
+</div>
+{% endblock %}
