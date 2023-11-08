@@ -6,7 +6,7 @@
     {% csrf_token %}
     <fieldset class="form-group">
       <legend class="border-bottom mb-4">Create a User</legend>
-      {{ form }}
+      {{ form.as_p }}
     </fieldset>
     <div class="form-button">
       <button class="btn btn-warning" type="submit">Sign Up</button>
@@ -14,6 +14,7 @@
   </form>
   <div class="sign-in-instead">
     <small class="already-account">
+      <br />
       Or <a href="">Sign In</a> if you alredy have an account.
     </small>
   </div>

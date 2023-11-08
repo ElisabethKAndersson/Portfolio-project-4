@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from presentation.views import index
 from users.views import register
+from presentation.views import reviews
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('register/', register, name='register'),
+    path('reviews/', reviews, name='reviews'),
 ]

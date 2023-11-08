@@ -31,13 +31,14 @@
         >
         </a>
         <div class="col-sm-12 col-md-8 col-lg-8">
-          <div class="row no-gutters top">
-            <div col-12>
-              <h2>Soulcoach</h2>
-            </div>
-            <div col-12>
-              <h1>Sussie Johansson</h1>
-            </div>
+          {% if messages %}
+            {% for message in messages %}
+            <br>
+                <div class="alert alert-success" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+          {% endif %}
           </div>
         </div>
       </div>

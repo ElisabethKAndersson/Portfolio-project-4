@@ -11,3 +11,5 @@ def index(request):
 
 
 # Review page
+def reviews(request):
+    return render(request, "presentation/reviews.html")
