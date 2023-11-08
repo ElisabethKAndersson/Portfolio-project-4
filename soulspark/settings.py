@@ -42,6 +42,7 @@ ALLOWED_HOSTS = ['soulspark.herokuapp.com', 'localhost',
 
 INSTALLED_APPS = [
     'presentation.apps.PresentationConfig',
+    'users.app.UserConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
