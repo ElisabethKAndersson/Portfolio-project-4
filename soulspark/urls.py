@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from presentation.views import index
 from users.views import register
-from presentation.views import reviews
+from presentation.views import reviews, prices, contact
 
 
 urlpatterns = [
@@ -25,4 +25,6 @@ urlpatterns = [
     path('', index, name='index'),
     path('register/', register, name='register'),
     path('reviews/', reviews, name='reviews'),
+    path('prices/', prices, name='prices'),
+    path('contact/', contact, name='contact'),
 ]

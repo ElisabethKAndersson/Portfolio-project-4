@@ -35,7 +35,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ['soulspark.herokuapp.com', 'localhost',
-                 '8000-elisabethkandersson-port-nud0uk3l20.us2.codeanyapp.com']
+                 '8000-elisabethkandersson-port-nud0uk3l20.us2.codeanyapp.com',
+                 '8000-elisabethkandersson-port-25mhqqtqpz.us2.codeanyapp.com',]
 
 
 # Application definition
@@ -148,3 +149,4 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+ACCOUNT_EMAIL_VERIFICATION = 'none'

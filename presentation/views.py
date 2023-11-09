@@ -13,3 +13,13 @@ def index(request):
 # Review page
 def reviews(request):
     return render(request, "presentation/reviews.html")
+
+
+# Prices page
+def prices(request):
+    return render(request, "presentation/prices.html")
+
+
+# Contact page
+def contact(request):
+    return render(request, "presentation/contact.html")

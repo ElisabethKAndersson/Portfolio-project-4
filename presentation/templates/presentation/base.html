@@ -15,6 +15,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="../../../static/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Raleway&display=swap" rel="stylesheet">
     <title>{% block title %}Soulspark{% endblock %}</title>
   </head>
 
@@ -50,13 +51,13 @@
               <a href="{% url 'index' %}"><span>Home</span></a>
             </li>
             <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="/"><span>Reviews</span></a>
+              <a href="{% url 'reviews' %}"><span>Reviews</span></a>
             </li>
             <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="/"><span>Prices</span></a>
+              <a href="{% url 'prices' %}"><span>Prices</span></a>
             </li>
             <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="/"><span>Contact</span></a>
+              <a href="{% url 'contact' %}"><span>Contact</span></a>
             </li>
           </ul>
         </div>
