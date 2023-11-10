@@ -44,7 +44,10 @@ INSTALLED_APPS = [
     'presentation.apps.PresentationConfig',
     'users.apps.UsersConfig',
     'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.auth',
+    'allauth',
+    'allauth.account',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -53,6 +56,11 @@ INSTALLED_APPS = [
     'cloudinary',
     'crispy_forms',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -64,6 +72,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'soulspark.urls'
