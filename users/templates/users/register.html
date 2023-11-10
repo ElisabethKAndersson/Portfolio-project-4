@@ -1,12 +1,13 @@
-{% extends "presentation/base.html" %} {% block title %}Home {%endblock %}
+{% extends "presentation/base.html" %} {% block title %} Register {%endblock %}
 <br />
 {% block content %}
+{% load crispy_forms_tags %}
 <div class="form-section">
   <form method="POST">
     {% csrf_token %}
     <fieldset class="form-group">
       <legend class="border-bottom mb-4">Create a User</legend>
-      {{ form.as_p }}
+      {{ form | crispy }}
     </fieldset>
     <div class="form-button">
       <button class="btn btn-warning" type="submit">Sign Up</button>

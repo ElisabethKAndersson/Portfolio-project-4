@@ -35,8 +35,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ['soulspark.herokuapp.com', 'localhost',
-                 '8000-elisabethkandersson-port-nud0uk3l20.us2.codeanyapp.com',
-                 '8000-elisabethkandersson-port-25mhqqtqpz.us2.codeanyapp.com',]
+                 '8000-elisabethkandersson-port-mb47laccfp.us2.codeanyapp.com',]
 
 
 # Application definition
@@ -52,7 +51,10 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
