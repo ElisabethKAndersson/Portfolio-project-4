@@ -17,9 +17,6 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from presentation.views import index
-from users.views import register
-from users import views as user_views
-
 from presentation.views import reviews, prices, contact
 
 
