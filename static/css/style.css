@@ -1,5 +1,5 @@
 body {
-    background-color: edeae5;
+    background-color: #edeae5;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -40,8 +40,14 @@ header {
     padding-top: 10px;
 }
 
-a {
+li a {
     color: black;
+}
+
+.account a {
+    color: #edeae5;
+    font-size: 12px;
+    text-align: right;
 }
 
 /*--------------------------------------------Index */

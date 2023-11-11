@@ -1,10 +1,2 @@
-{% extends "presentation/base.html" %} {% block title %}Home {%endblock %}
+{% extends "presentation/base.html" %} {% block title %} Reviews {%endblock %}
 <br />
-{% block content %} {% for post in posts %}
-<article class="media content-section">
-  <div class="media-body">
-    <div class="article-metadata">
-        <p class="article-content">{{ post.content }}</p>
-  </div>
-</article>
-{% endfor %} {% endblock %}
