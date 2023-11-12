@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
+from .forms import LeaveReview
 
 # Create your views here.
 
@@ -26,4 +27,5 @@ def reviews(request):
 
 # Post model to post review.
 def leave_review(request):
-    return render(request, "presentation/leave_review")
+    form= LeaveReview()
+    return render(request, "presentation/leave_review", {"form":form})
