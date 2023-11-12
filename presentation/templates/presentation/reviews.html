@@ -4,7 +4,8 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Reviews -->
+        <!-- Display reviews -->
+        <h1>REVIEWS</h1>
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in posts %}
@@ -15,11 +16,9 @@
                                 </div>
                             </div>
                             <a href="#" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
                                 <h3>{{ post.content }} </h3>
                             </a>
-                            <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}}</p>
+                            <hr />   
                         </div>
                     </div>
                 </div>
@@ -35,12 +34,23 @@
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
             {% endif %}
         </ul>
     </nav>
     {% endif %}
 </div>
+
+<!-- Leave reviews -->
+
+
+<h2>LEAVE A REVIEW</h2>
+<p>Posting as: {{ user.username }}</p>
+<form method="post" style="margin-top: 2em;">
+    {{ post_form | crispy }}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+</form>
