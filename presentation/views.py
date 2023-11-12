@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Post
+from .froms import CommentForm
 
 # Create your views here.
 
@@ -21,9 +22,19 @@ def contact(request):
 
 
 # Post model to post review.
-class ReviewsView(generic.ListView):
-    model = Post
-    queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'presentation/reviews.html'
-    context_object_name = 'posts'
-    paginate_by = 4
+def leave_review
+    comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+                comment_form.instance.name = request.user.username
+                comment = comment_form.save(commit=False)
+                comment.post = post
+                comment.save()
+            else:
+                comment_form = CommentForm()
+
+            return render(
+                request, "add_review.html", 
+                {'comments': comments, 
+                'form': form},
+            )
+             
