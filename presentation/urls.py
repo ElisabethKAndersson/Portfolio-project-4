@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from presentation.views import index, prices, contact
-from presentation.views import leave_review
+from presentation.views import leave_review, reviews
 
 
 urlpatterns = [
