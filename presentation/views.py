@@ -21,18 +21,3 @@ def contact(request):
 
 
 # Post model to post review.
-def leave_review(request, post):
-    comment_form = Post(data=request.POST)
-    if comment_form.is_valid():
-        comment_form.instance.name = request.user.username
-        comment = comment_form.save(commit=False)
-        comment.post = post
-        comment.save()
-    else:
-        comment_form = Post()
-
-    return render(
-        request, post, "reviews.html",
-        {'comments': comments,
-         'form': comment_form},
-    )
