@@ -40,7 +40,7 @@ def leave_review(request):
     context = {
         'form': form
     }
-    return render(request, 'leave_review', context)
+    return render(request, 'presentation/leave_review.html', context)
 
 
 def edit_review(request, item_id):
@@ -49,7 +49,7 @@ def edit_review(request, item_id):
         form = ItemForm(request.POST, instance=item)
         if form.is_valid():
             form.save()
-            return redirect('get_todo_list')
+            return redirect('reviews')
     form = ItemForm(instance=item)
     context = {
         'form': form

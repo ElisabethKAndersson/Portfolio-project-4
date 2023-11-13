@@ -4,8 +4,8 @@ from django.contrib.auth import get_user_model
 
 
 class Item(models.Model):
-    context = models.TextField(max_length=200, null=False, blank=False)
-    name = models.CharField(max_length=200, blank=False, default=False)
+    context = models.TextField(max_length=200, default="Add your review")
+    name = models.CharField(max_length=200, default="Add your name")
 
     def __str__(self):
         return self.name

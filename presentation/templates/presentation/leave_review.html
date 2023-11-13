@@ -1,11 +1,12 @@
-{% extends "presentation/base.html" %} {% block title %}Post {%endblock %} {%
-block content %}
+{% extends "presentation/base.html" %} {% block title %}Post {% endblock %}
+<br />
+{% block content %}
 <h1>Add a Todo Item:</h1>
 <form method="POST" action="{% url 'leave_review' %}">
   {% csrf_token %} {{ form.as_p }}
   <div>
     <p>
-      <button type="submit">Add Item</button>
+      <button type="submit">Post review</button>
     </p>
   </div>
 </form>
