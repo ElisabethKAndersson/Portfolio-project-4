@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
-from .forms import Post
-#from .forms import LeaveReview, Post
+from .models import Item
+from .forms import ItemForm
+# from .forms import LeaveReview, Post
 # Create your views here.
 
 
@@ -22,10 +23,41 @@ def contact(request):
 
 # Review page
 def reviews(request):
-    return render(request, "presentation/reviews.html")
+    items = Item.objects.all()
+    context = {
+        'items': items
+    }
+    return render(request, 'presentation/reviews.html', context)
 
 
-# Post model to post review.
 def leave_review(request):
-    form = Post()
-    return render(request, "presentation/leave_review.html", {"form": ModelForm})
+    if request.method == 'POST':
+        form = ItemForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('reviews')
+    form = ItemForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'leave_review', context)
+
+
+def edit_review(request, item_id):
+    item = get_object_or_404(Item, id=item_id)
+    if request.method == 'POST':
+        form = ItemForm(request.POST, instance=item)
+        if form.is_valid():
+            form.save()
+            return redirect('get_todo_list')
+    form = ItemForm(instance=item)
+    context = {
+        'form': form
+    }
+    return render(request, 'presentation/reviews.html', context)
+
+
+def delete_item(request, item_id):
+    item = get_object_or_404(Item, id=item_id)
+    item.delete()
+    return redirect('presentation/reviews.html')

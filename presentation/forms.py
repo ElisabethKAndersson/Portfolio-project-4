@@ -1,14 +1,13 @@
-from .models import Post
 from django import forms
 from django.db import models
+from .models import Item
 
-
-#class LeaveReview(forms.Form):
+# class LeaveReview(forms.Form):
 #    comment = models.TextField(max_length=400)
 #    name = forms.CharField(max_length=100)
 
 
-class PostReview(forms.ModelForm):
+class ItemForm(forms.ModelForm):
     class Meta:
-        model = Post
-        fields = ['content', 'author']
+        model = Item
+        fields = ['context', 'name']
