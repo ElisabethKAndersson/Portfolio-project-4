@@ -1,13 +1,13 @@
 {% extends "presentation/base.html" %} {% block title %} Reviews {%endblock %}
 <br />
-{% block content %} {%endblock %}
-
-<h1>Edit a Todo Item:</h1>
+{% block content %} {%endblock %} {% load crispy_forms_tags %} {% if
+user.is_authenticated %}
 <form method="POST">
-  {% csrf_token %} {{ form.as_p }}
+  {% csrf_token %} {{ form | crispy }}
   <div>
     <p>
-      <button type="submit">Update Item</button>
+      <button type="submit">Edit</button>
     </p>
   </div>
 </form>
+{% endif %}

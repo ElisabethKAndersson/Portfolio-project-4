@@ -43,7 +43,7 @@ def leave_review(request):
     return render(request, 'presentation/leave_review.html', context)
 
 
-def edit_review(request, item_id):
+def edit_review(request):
     item = get_object_or_404(Item, id=item_id)
     if request.method == 'POST':
         form = ItemForm(request.POST, instance=item)
