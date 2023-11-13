@@ -1,13 +1,8 @@
-{% extends "presentation/base.html" %} {% block title %} Reviews {%endblock %}
 <br />
 {% block content %} {%endblock %} {% load crispy_forms_tags %}
 <br />
+{% if user.is_authenticated and user == category.author %}
 <form method="POST">
   {% csrf_token %} {{ form | crispy }}
-  <div>
-    <p>
-      <button type="submit">Edit</button>
-    </p>
-  </div>
+  <div></div>
 </form>
-{% endif %}

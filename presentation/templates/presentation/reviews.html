@@ -28,6 +28,6 @@
     {% if user.is_authenticated %}
     <a href="{% url 'leave_review' %}"> Leave a review</a>
     {% else %}
-    <a href="">Signup / login to leave a review.</a>
+    <p>Signup / login to leave a review.</p>
     {% endif %}
 {% endblock %}
