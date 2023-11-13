@@ -23,7 +23,8 @@ from presentation.views import leave_review, reviews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('reviews/', leave_review, name='reviews'),
+    path('leave_review/', leave_review, name='leave_review'),
+    path('reviews/', reviews, name='reviews'),
     path('prices/', prices, name='prices'),
     path('contact/', contact, name='contact'),
     path("accounts/", include("allauth.urls")),

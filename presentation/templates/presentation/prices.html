@@ -1,10 +1,34 @@
 {% extends "presentation/base.html" %} {% block title %}Home {%endblock %}
 <br />
-{% block content %} {% for post in posts %}
-<article class="media content-section">
-  <div class="media-body">
-    <div class="article-metadata">
-        <p class="article-content">{{ post.content }}</p>
-  </div>
-</article>
-{% endfor %} {% endblock %}
+{% block content %}
+
+        
+<div class="no-gutters">
+    <div class="col-12 list-inline">    
+        <div class="col-sm-12 col-md-12 col-lg-6 list-inline">
+            <a class="room" href="../images/preview_.jfif" alt="Room"> </a>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 list-inline list-text">
+                <ul id="nav" class="coaching"></ul>
+                    <h1>Coaching</h1>
+                    <li class="services">
+                        <p>Soulcoaching 1h <br>
+                        60 minuter, 750 kr</p>
+                    </li>
+                    <li class="services">
+                        <p>Soulcoaching Expansion 1,5h<br>
+                            90 minuter, 1 125 kr</p>
+                    <li class="services">
+                        <p>Coachpaket 3 sessioner 1h/tillfälle<br>
+                            60 minuter, 2 100 kr</p>
+                    </li>
+                    </li>
+                    <li class="services">
+                        <p>Coachpaket 3 sessioner 1h/tillfälle <br>
+                            90 minuter, 3 000 kr</p>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
