@@ -1,0 +1,34 @@
+{% extends "presentation/base.html" %} {% block title %}Post {% endblock %}
+<br />
+
+{% block content %} {%load crispy_forms_tags %}
+
+<body data-new-gr-c-s-check-loaded="14.1137.0" data-gr-ext-installed="">
+  <div>
+    <strong>Menu:</strong>
+    <ul>
+      <li>
+        <a href="/accounts/login/">Sign In</a>
+      </li>
+      <li>
+        <a href="/accounts/signup/">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+  <h1>Sign Up</h1>
+  <p>
+    Already have an account? Then please <a href="/accounts/login/">sign in</a>.
+  </p>
+
+  <form method="post" action="/accounts/signup/">
+    {% csrf_token %} {{ form | crispy }}
+    <input
+      type="hidden"
+      name="csrfmiddlewaretoken"
+      value="i1BPN9YJXelD7gew1J1uy9sKrvhNTG55UVPlVurtnQsurDtdl4IpTCb7JmQ4MbfB"
+    />
+
+    <button type="submit">Sign Up</button>
+  </form>
+</body>
+{% endblock %}
