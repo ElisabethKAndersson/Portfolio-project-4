@@ -42,6 +42,7 @@ header {
 
 li a {
     color: black;
+    list-style-type: none;
 }
 
 
@@ -51,7 +52,6 @@ li a {
     font-weight: bold;
     float: right;
     margin-right: 10px;
-    list-style-type: none;
 }
 
 
