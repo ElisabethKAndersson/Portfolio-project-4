@@ -44,17 +44,16 @@ li a {
     color: black;
 }
 
-.account {
+
+.sign_in a {
     color: #edeae5;
     font-size: 12px;
     font-weight: bold;
     float: right;
     margin-right: 10px;
-}
-
-.account {
     list-style-type: none;
 }
+
 
 /*--------------------------------------------Index */
 
