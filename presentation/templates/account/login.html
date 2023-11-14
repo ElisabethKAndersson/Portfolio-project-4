@@ -5,11 +5,6 @@
 
 <form method="post" action="/accounts/login/">
   {% csrf_token %} {{ form | crispy }}
-  <input
-    type="hidden"
-    name="csrfmiddlewaretoken"
-    value="Hj0MV63E14my91Kq6BPpGJak7yi1gjlFjdei3rworGtptoZ7qWwk1cTHppRi9Ovb"
-  />
   <p>
     <button type="submit">Sign In</button>
   </p>

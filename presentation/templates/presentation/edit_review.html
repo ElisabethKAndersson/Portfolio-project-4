@@ -1,7 +1,7 @@
 <br />
 {% block content %} {%endblock %} {% load crispy_forms_tags %}
 <br />
-{% if user.is_authenticated and user == category.author %}
+{% if user.is_authenticated and user == item.author %}
 <form method="POST">
   {% csrf_token %} {{ form | crispy }}
   <div></div>

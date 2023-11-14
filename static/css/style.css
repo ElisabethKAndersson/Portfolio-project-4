@@ -47,7 +47,14 @@ li a {
 .account a {
     color: #edeae5;
     font-size: 12px;
-    text-align: right;
+    font-weight: bold;
+    float: right;
+
+    margin-right: 10px;
+}
+
+.account {
+    list-style-type: none;
 }
 
 /*--------------------------------------------Index */
@@ -63,8 +70,8 @@ li a {
 
 .presentation_text {
     max-width: 500px;
-    margin-left: 250px;
     margin-top: 50px;
+    margin-left: 150px;
 }
 
 
