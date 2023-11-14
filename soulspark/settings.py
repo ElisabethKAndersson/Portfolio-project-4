@@ -36,7 +36,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ['soulspark.herokuapp.com', 'localhost',
-                 '8000-elisabethkandersson-port-3ecroqbidq.us2.codeanyapp.com',]
+                 '8000-elisabethkandersson-port-iuygrz0cpx.us2.codeanyapp.com',]
 
 
 # Application definition
