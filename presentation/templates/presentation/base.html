@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -14,7 +14,7 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css"
     />
-    <link rel="stylesheet" href="../../../static/css/style.css" />
+    <link rel="stylesheet" href="../../../static/css/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Raleway&display=swap" rel="stylesheet">
     <title>{% block title %}Soulspark{% endblock %}</title>
   </head>
@@ -24,25 +24,25 @@
     <header>
       <!-- Logo and top color with title-->
       <div class="row no-gutters sticky">
-        <a
-          class="col-sm-12 col-md-4 col-lg-4 logo"
-          a
-          href="/"
-          alt="Soulspark logo"
-        >
+        <a class="col-sm-12 col-md-4 col-lg-4 logo" href="/">
+
+        <!-- Sign in and out, links -->
         </a>
         <div class="col-sm-12 col-md-8 col-lg-8">          
             <div>
                 <br>    
-                <ul class="account">
-                    {% if user.is_authenticated %}
+                {% if user.is_authenticated %}
+                <ul class="account"> 
                     <li class="sign_in"><a href="{% url 'account_email' %}">Change E-mail</a></li>
                     <li class="sign_in"><a href="{% url 'account_logout' %}">Sign Out</a></li>
                     {% else %}
                     <li class="sign_in"><a href="{% url 'account_login' %}">Sign In</a></li>
                     <li class="sign_in"><a href="{% url 'account_signup' %}">Sign Up</a></li>
+                </ul>
                     {% endif %}
-        
+
+
+        <!-- Sign for alert user that sign in was successful-->
           {% if messages %}
             {% for message in messages %}
             <br>
@@ -54,6 +54,8 @@
           </div>
         </div>
       </div>
+
+
       <!-- Menu line -->
       <div class="row links no-gutters">
         <div class="col-12">

@@ -2,9 +2,10 @@
 <br />
 {% block content %}
 
+
     <table>
     {% for item in items %}
-        <tr>
+        <tr class = "reviews">
             <td class = "review_text">{{ item.context }}<br></td>
             
             <td class = "review_name">-{{ item.name }}</td>

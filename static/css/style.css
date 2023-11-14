@@ -44,12 +44,11 @@ li a {
     color: black;
 }
 
-.account a {
+.account {
     color: #edeae5;
     font-size: 12px;
     font-weight: bold;
     float: right;
-
     margin-right: 10px;
 }
 
@@ -71,7 +70,7 @@ li a {
 .presentation_text {
     max-width: 500px;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 250px;
 }
 
 
