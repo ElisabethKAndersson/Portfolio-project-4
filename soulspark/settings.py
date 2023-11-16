@@ -38,7 +38,8 @@ DEBUG = False
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['soulspark.herokuapp.com', 'localhost',
-                 '8000-elisabethkandersson-port-0nyl954cem.us2.codeanyapp.com',]
+                 '8000-elisabethkandersson-port-0nyl954cem.us2.codeanyapp.com',
+                 'https://soulspark-2b23afca50ab.herokuapp.com/']
 
 
 # Application definition
