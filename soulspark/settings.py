@@ -37,7 +37,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['soulspark.herokuapp.com', 'localhost',
+ALLOWED_HOSTS = ['soulspark.herokuapp.com', 'localhost', 'soulspark-2b23afca50ab.herokuapp.com'
                  '8000-elisabethkandersson-port-0nyl954cem.us2.codeanyapp.com',]
 
 
