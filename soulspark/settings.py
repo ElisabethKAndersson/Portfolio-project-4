@@ -37,8 +37,10 @@ DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
+
+
 ALLOWED_HOSTS = ['soulspark.herokuapp.com', 'localhost',
-                 '8000-elisabethkandersson-port-0nyl954cem.us2.codeanyapp.com',]
+                 '8000-elisabethka-portfoliopr-klh656siqe5.ws-eu108.gitpod.io',]
 
 
 # Application definition
@@ -58,7 +60,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'crispy_forms',
-    'reviews',
 ]
 
 SITE_ID = 1
@@ -174,3 +175,6 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
