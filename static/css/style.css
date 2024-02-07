@@ -18,9 +18,11 @@ header {
     min-height: 250px;
 }
 
-.menu-link {
+.menu-link:hover {
+    text-decoration: none;
     background-color: #9fedd7;
     margin: 0;
+    color:;
 }
 
 .list-inline-item:not(:last-child) {

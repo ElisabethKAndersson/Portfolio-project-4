@@ -81,18 +81,26 @@
       <div class="row links no-gutters">
         <div class="col-12">
           <ul id="nav" class="list-inline menucontainer">
-            <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="{% url 'index' %}"><span>Home</span></a>
-            </li>
-            <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="{% url 'reviews' %}"><span>Reviews</span></a>
-            </li>
-            <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="{% url 'prices' %}"><span>Prices</span></a>
-            </li>
-            <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-              <a href="{% url 'contact' %}"><span>Contact</span></a>
-            </li>
+            <a href="{% url 'index' %}" class="link-dark">
+              <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
+                <span class="menu-text">Home</span>
+              </li>
+            </a>
+            <a href="{% url 'reviews' %}">
+              <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
+                <span class="menu-text">Reviews</span>
+              </li>
+            </a>
+            <a href="{% url 'prices' %}">
+              <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
+                <span class="menu-text">Prices</span>
+              </li>
+            </a>
+            <a href="{% url 'contact' %}">
+              <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
+                <span class="menu-text">Contact</span>
+              </li>
+            </a>
           </ul>
         </div>
       </div>
