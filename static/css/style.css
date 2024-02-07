@@ -7,6 +7,11 @@ body {
 header {
     background-color: #026670;
     background-size: cover;
+    color: black;
+}
+
+span {
+    color: black;
 }
 
 .logo {
@@ -16,14 +21,29 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 250px;
+    border: #026670;
+}
+
+span {
+    color: black;
+}
+
+.menucontainer {
+    background-color: #9fedd7;
 }
 
 .menu-link:hover {
     text-decoration: none;
-    background-color: #9fedd7;
+    background-color: #026670;;
     margin: 0;
-    color:;
 }
+
+.menu-link:>.active>a{
+    text-decoration: none;
+    background-color: #026670;;
+    margin: 0;
+}
+
 
 .list-inline-item:not(:last-child) {
     margin: 0;

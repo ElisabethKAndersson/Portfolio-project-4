@@ -5,11 +5,9 @@
 
     <table>
     {% for item in items %}
-        <tr class = "reviews">
-            <td class = "review_text">{{ item.context }}<br></td>
-            
-            <td class = "review_name">-{{ item.name }}</td>
-            </td>
+        <div class = "reviews ">
+            <h1 class = "review_text badge text-wrap">{{ item.context }} <span class="badge">{{ item.name }}</span></h1>
+        </div>
             {% if user.is_authenticated%}
             <td>
             <a href="/edit/{{ item.id }}">
