@@ -5,30 +5,34 @@
 
     <table>
     {% for item in items %}
-        <div class = "reviews ">
-            <h1 class = "review_text badge text-wrap">{{ item.context }} <span class="badge">{{ item.name }}</span></h1>
+        <div class = "reviews d-flex justify-content-center pt-5">
+            <h1 class = "review_text badge text-wrap">{{ item.context }} <span class="badge">-{{ item.name }}</span></h1>
         </div>
-            {% if user.is_authenticated%}
-            <td>
-            <a href="/edit/{{ item.id }}">
-                <button type="button" class="btn btn-primary btn-sm">Edit</button>
-            </a>
-            </td>
-            <td>
-            <a href="/delete/{{ item.id }}">
-                <button type="button" class="btn btn-primary btn-sm">Delete</button>
-            </a>
-            </td>
+        <div class = "d-flex justify-content-center pt-2">
+            {% if user.is_authenticated %}
+                <a class="mr-1" href="/edit/{{ item.id }}">
+                    <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                </a>
+                <a class="ml-1" href="/delete/{{ item.id }}">
+                    <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                </a>
             {% endif %}
-        </tr>
+        </div>
+            
+        
     {% empty %}
         <h3> There are no reviews here yet </h3>
 
     {% endfor %}
-    </table>
+    
     {% if user.is_authenticated %}
-    <a href="{% url 'leave_review' %}"> Leave a review</a>
-    {% else %}
-    <p>Signup / login to leave a review.</p>
+        <div class="review_add d-flex justify-content-center mt-5 font-weight-light">
+            <a href="{% url 'leave_review' %}"> Leave a review</a>
+        </div>
+        {% else %}
+        <div class="review_add d-flex justify-content-center font-weight-light">
+            <p>Signup / login to leave a review.</p>
+        </div>
+    </table>
     {% endif %}
 {% endblock %}

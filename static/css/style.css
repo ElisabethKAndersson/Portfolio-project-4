@@ -97,6 +97,18 @@ li a {
 
 /*--------------------------------------------Reviews */
 
+.review_text {
+    font-size: x-large;
+}
+
+.review_add {
+    font-size: small;
+    margin-top: 3px;
+}
+
+.badge {
+    background-color: ;
+}
 
 
 
