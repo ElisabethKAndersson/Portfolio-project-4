@@ -1,11 +1,14 @@
+{% extends "presentation/base.html" %} {% block title %}Edit{% endblock %}
 <br />
-{% block content %} {%endblock %} {% load crispy_forms_tags %}
+{% block content %}  {% load crispy_forms_tags %}
 <br />
-
-<form method="POST">
-  {% csrf_token %} {{ form | crispy }}
-  <div>
-    <button type="submit">Edit review</button>
-  </div>
-</form>
-
+<h2 class="d-flex justify-content-center mt-5 mb-2" >Edit your Review</h2>
+<div class="d-flex justify-content-center ml-2 mr-2">
+  <form method="POST">
+    {% csrf_token %} {{ form | crispy }}
+    <div>
+      <button type="submit">Edit review</button>
+    </div>
+  </form>
+</div>
+  {%endblock %}
