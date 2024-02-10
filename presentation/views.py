@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Item
 from .forms import ItemForm
+from django.core.paginator import Paginator
 # from .forms import LeaveReview, Post
 # Create your views here.
 
@@ -23,10 +24,17 @@ def contact(request):
 
 # Review page
 def reviews(request):
-    items = Item.objects.all()
-    context = {
-        'items': items
-    }
+    list_reviews = Item.objects.all()
+
+    p = Paginator(Item.objects.all(), 3)
+    page = request.GET.get('page')
+    reviews_list = p.get_page(page)
+    nums = "a" * reviews_list.paginator.num_pages
+
+    context =  {'list_reviews' : list_reviews,
+                'reviews_list': reviews_list,
+                'nums':nums}
+        
     return render(request, 'presentation/reviews.html', context)
 
 
