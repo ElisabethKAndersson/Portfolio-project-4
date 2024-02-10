@@ -2,13 +2,16 @@
 <br />
 {% block content %}
 
-
+    <!-- Code to show reviews -->
     <table>
     {% for item in reviews_list %}
         <div class = "reviews d-flex justify-content-center pt-5">
-            <h1 class = "review_text badge text-wrap">{{ item.context }} <span class="badge">-{{ item.name }}</span></h1>
+            <h1 class = "review_text badge text-wrap w-50">{{ item.context }} <span class="badge text-secondary">-{{ item.name }}</span></h1>
         </div>
         <div class = "d-flex justify-content-center pt-2">
+
+            <!--Buttons to edit / delete reviews created by logged in user-->
+        
             {% if user.is_authenticated and user == item.author %}
                 <a class="mr-1" href="/edit/{{ item.id }}">
                     <button type="button" class="btn btn-primary btn-sm">Edit</button>
@@ -18,13 +21,13 @@
                 </a>
             {% endif %}
         </div>
-            
-        
+
+    <!--Text if no reviews exist-->
     {% empty %}
         <h3> There are no reviews here yet </h3>
-
     {% endfor %}
-    
+
+    <!--Leave review link-->
     {% if user.is_authenticated %}
         <div class="review_add d-flex justify-content-center mt-5 font-weight-light">
             <a href="{% url 'leave_review' %}"> Leave a review</a>
@@ -35,4 +38,25 @@
         </div>
     </table>
     {% endif %}
-{% endblock %}
+
+    <!-- Navigation between different reviews -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination pagination-sm justify-content-center bg-light">     
+    
+    {% if reviews_list.has_previous %}
+        <li class="page-item"><a class="page-link text-dark" href="?page={{ reviews_list.previous_page_number }}">Previous</a></li>
+    {% endif %}
+
+
+    {% for i in nums %}
+    <li class="page-item"><a class="page-link text-dark" href="?page={{ forloop.counter }}">{{ forloop.counter }}</a></li>
+
+    {% endfor %}
+
+
+    {% if reviews_list.has_next %}
+    <li class="page-item"><a class="page-link text-dark" href="?page={{ reviews_list.next_page_number }}">Next</a></li>
+
+    {% endif %}
+
+    {% endblock %}
