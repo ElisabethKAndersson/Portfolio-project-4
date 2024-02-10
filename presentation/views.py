@@ -51,10 +51,10 @@ def leave_review(request):
     return render(request, 'presentation/leave_review.html', context)
 
 
-def edit_review(request):
+def edit_review(request, item_id):
     item = get_object_or_404(Item, id=item_id)
     if request.method == 'POST':
-        form = ItemForm(request.POST, instance=item)
+        form = ItemForm(request.POST, instance = item)
         if form.is_valid():
             form.save()
             return redirect('reviews')
@@ -62,7 +62,7 @@ def edit_review(request):
     context = {
         'form': form
     }
-    return render(request, 'presentation/reviews.html', context)
+    return render(request, 'presentation/edit_review.html', context)
 
 
 def delete_item(request, item_id):

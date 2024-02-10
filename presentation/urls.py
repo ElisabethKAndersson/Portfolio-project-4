@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('leave_review/', leave_review, name='leave_review'),
-    path('edit_review/', edit_review, name='edit_review'),
+    path('edit/<item_id>', edit_review, name='edit_review'),
     path('reviews/', reviews, name='reviews'),
     path('prices/', prices, name='prices'),
     path('contact/', contact, name='contact'),
