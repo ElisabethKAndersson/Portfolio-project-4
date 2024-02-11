@@ -3,6 +3,7 @@ from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from presentation.views import index, prices, contact
 from presentation.views import leave_review, reviews, edit_review, delete_review
+from booking.views import booking
 
 
 urlpatterns = [
@@ -14,5 +15,6 @@ urlpatterns = [
     path('reviews/', reviews, name='reviews'),
     path('prices/', prices, name='prices'),
     path('contact/', contact, name='contact'),
-    path("accounts/", include("allauth.urls")),
+    path('accounts/', include('allauth.urls')),
+    path('booking/', include('booking.urls')),
 ]

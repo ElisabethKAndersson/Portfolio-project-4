@@ -4,7 +4,7 @@ from .models import Item
 from .forms import ItemForm
 from django.core.paginator import Paginator
 # from .forms import LeaveReview, Post
-# Create your views here.
+
 
 
 # Index page
