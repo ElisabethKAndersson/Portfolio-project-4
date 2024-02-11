@@ -69,3 +69,6 @@ def delete_review(request, item_id):
     item = get_object_or_404(Item, id=item_id)
     item.delete()
     return redirect('reviews')
+
+
+# Booking page
