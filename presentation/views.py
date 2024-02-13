@@ -40,9 +40,18 @@ def reviews(request):
 
 def leave_review(request):
     if request.method == 'POST':
-        form = ItemForm(request.POST)
-        if form.is_valid():
-            form.save()
+        if request.user.is_authenticated:
+            form = ItemForm(request.POST)
+
+           
+            
+            if form.is_valid():
+                obj = form.save(commit=False) 
+                obj.author_id = request.user.id
+                obj.save() 
+            else:
+                print("ERROR : Form is invalid")
+            
             return redirect('reviews')
     form = ItemForm()
     context = {

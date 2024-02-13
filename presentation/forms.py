@@ -10,4 +10,5 @@ from .models import Item
 class ItemForm(forms.ModelForm):
     class Meta:
         model = Item
-        fields = ['context', 'name', 'author']
+        fields = ['context', 'name']
+
