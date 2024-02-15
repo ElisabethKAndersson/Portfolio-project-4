@@ -60,7 +60,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'crispy_forms',
-    'booking',
 ]
 
 SITE_ID = 1

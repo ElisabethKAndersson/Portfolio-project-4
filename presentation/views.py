@@ -31,11 +31,11 @@ def reviews(request):
     reviews_list = p.get_page(page)
     nums = "a" * reviews_list.paginator.num_pages
 
-    context =  {'list_reviews' : list_reviews,
+    text =  {'list_reviews' : list_reviews,
                 'reviews_list': reviews_list,
                 'nums':nums}
         
-    return render(request, 'presentation/reviews.html', context)
+    return render(request, 'presentation/reviews.html', text)
 
 
 def leave_review(request):

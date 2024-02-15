@@ -41,29 +41,38 @@
 
   <body>
     {% block header %}
-    <header>
+    <header class>
       <!-- Logo and top color with title-->
       <div class="row no-gutters sticky">
-        <a class="col-sm-12 col-md-4 col-lg-4 logo" href="/">
-          <!-- Sign in and out, links -->
+        <a class=" col-md-3 ml-3 p-0 m-2" href="#">
+          <img src="../../../static/images/{{'soulsparklogo.jpg'}}" width="250" height="250" alt="logo">
         </a>
+        
         <div class="col-sm-12 col-md-8 col-lg-8">
           <div>
             <br />
             {% if user.is_authenticated %}
             <ul class="account">
               <li class="sign_in">
-                <a href="{% url 'account_email' %}">Change E-mail</a>
+                <button type="button" class="btn btn-outline-light">
+                  <a href="{% url 'account_email' %}">Change E-mail</a>
+                </button>
               </li>
               <li class="sign_in">
-                <a href="{% url 'account_logout' %}">Sign Out</a>
+                <button type="button" class="btn btn-outline-light">
+                  <a href="{% url 'account_logout' %}">Sign Out</a>
+                </button>
               </li>
               {% else %}
               <li class="sign_in">
-                <a href="{% url 'account_login' %}">Sign In</a>
+                <button type="button" class="btn btn-outline-light">
+                  <a href="{% url 'account_login' %}">Sign In</a>
+                </button>
               </li>
               <li class="sign_in">
-                <a href="{% url 'account_signup' %}">Sign Up</a>
+                <button type="button" class="btn btn-outline-light">
+                  <a href="{% url 'account_signup' %}">Sign Up</a>
+                </button>
               </li>
             </ul>
             {% endif %}
@@ -78,35 +87,56 @@
       </div>
 
       <!-- Menu line -->
-      <div class="row links no-gutters">
-        <div class="col-12">
-          <ul id="nav" class="list-inline menucontainer">
-            <a href="{% url 'index' %}">
-              <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-                <span class="menu-text">Home</span>
-              </li>
-            </a>
-            <a href="{% url 'reviews' %}">
-              <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-                <span class="menu-text">Reviews</span>
-              </li>
-            </a>
-            <a href="{% url 'prices' %}">
-              <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-                <span class="menu-text">Prices</span>
-              </li>
-            </a>
-            <a href="{% url 'contact' %}">
-              <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
-                <span class="menu-text">Contact</span>
-              </li>
-            </a>
-          </ul>
+      <nav class="navbar navbar-expand-md navbar-light bg-light p-0 wt-100">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center navbar-style w-100" id="navbarNav">
+                <li class="list-inline-item dropdown">
+                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <a href="{% url 'reviews' %}" class="dropdown-item">Services</a>
+
+                        </a>
+                    </div>
+                </li>
+
+
+          <nav class="navbar navbar-light bg-light p-0 d-flex justify-content-center col-12">
+            <ul id="nav" class="list-inline menucontainer w-100">
+              <a href="{% url 'index' %}">
+                <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link ">
+                  <span class="menu-text">Home</span>
+                </li>
+              </a>
+              <a href="{% url 'reviews' %}">
+                <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
+                  <span class="menu-text">Reviews</span>
+                </li>
+              </a>
+              <a href="{% url 'prices' %}">
+                <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
+                  <span class="menu-text">Prices</span>
+                </li>
+              </a>
+              <a href="{% url 'contact' %}">
+                <li class="col-sm-6 col-md-3 col-lg-3 list-inline-item menu-link">
+                  <span class="menu-text">Contact</span>
+                </li>
+              </a>
+            </ul>
+          </nav>
         </div>
-      </div>
+      
     </header>
     {% endblock %}
+  {% block footer %}
+    <footer>
+      <div class="footer fixed-bottom"></div>
+    </footer>
+  {% endblock%}
 
     <div id="content">{% block content %}{% endblock %}</div>
   </body>
+ 
 </html>

@@ -14,15 +14,6 @@ span {
     color: black;
 }
 
-.logo {
-    background: url(../images/soulsparklogo.jfif);
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 250px;
-    bo
-}
 
 span {
     color: black;
@@ -74,6 +65,11 @@ li a {
     font-weight: bold;
     float: right;
     margin-right: 10px;
+}
+
+.footer {
+    background-color: #026670;
+    height: 50px;
 }
 
 
