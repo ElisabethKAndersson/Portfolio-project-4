@@ -14,27 +14,25 @@ span {
     color: black;
 }
 
-
-span {
-    color: black;
-}
-
 .menucontainer {
     background-color: #9fedd7;
 }
 
 .menu-link:hover {
     text-decoration: none;
-    background-color: #026670;;
+    background-color: #026670;
     margin: 0;
 }
 
-.menu-link:>.active>a{
+.sign_in {
     text-decoration: none;
-    background-color: #026670;;
-    margin: 0;
+    color: #ffff;
 }
 
+.sign-btn:hover {
+    text-decoration: none;
+    background-color: #9fedd7;  
+}
 
 .list-inline-item:not(:last-child) {
     margin: 0;
@@ -46,25 +44,16 @@ span {
 }
 
 #nav li {
-    font-size: 20px;
+    font-size:  18px;
     text-align: center;
     padding: 0;
     height: 50px;
     padding-top: 10px;
 }
 
-li a {
-    color: black;
-    list-style-type: none;
-}
 
-
-.sign_in a {
-    color: #edeae5;
-    font-size: 12px;
-    font-weight: bold;
-    float: right;
-    margin-right: 10px;
+.sign-btn:hover {
+    background-color: #026670;
 }
 
 .footer {
