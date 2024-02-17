@@ -35,7 +35,7 @@
         </div>
         {% else %}
         <div class="review_add d-flex justify-content-center font-weight-light">
-            <p>Signup / login to leave a review.</p>
+            <a class = "sign_in text-dark" href="{% url 'account_signup' %}">Sign Up / Sign In to leave a review.</a>
         </div>
     </table>
     {% endif %}

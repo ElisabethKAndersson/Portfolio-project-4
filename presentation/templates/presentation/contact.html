@@ -1,10 +1,43 @@
-{% extends "presentation/base.html" %} {% block title %}Home {%endblock %}
+{% extends "presentation/base.html" %} {% load static %} {% block title %}Home {%endblock %}
 <br />
-{% block content %} {% for post in posts %}
-<article class="media content-section">
-  <div class="media-body">
-    <div class="article-metadata">
-        <p class="article-content">{{ post.content }}</p>
-  </div>
-</article>
-{% endfor %} {% endblock %}
+{% block content %}
+
+        
+
+<div class="container h-100">
+  <div class="row justify-content-center ">
+    <div class="col-12 col-md-6 mt-5 d-flex ">
+      <img class="image_room img-thumbnail" src = "{% static 'images/preview_.jpg' %}" alt="Sussi Johansson">
+    </div>
+    <div class="col-12 col-md-5  mt-5">
+      <ul id="nav" class="contact"></ul>
+        <h1>Contact</h1>
+        <li class="services list-inline">
+          <p>Email: <br>
+            soulsparksussie@outlook.com</p>
+                    
+        <li class="services list-inline mb-2">
+          <a class = "text-dark" href="https://www.facebook.com/soulspark.sussie.johansson/about">Facebook<br>
+          </a>
+        </li>
+        <li class="services list-inline mb-2">
+          <a class = "text-dark" href=
+          "https://www.instagram.com/soulsparksussiejohansson/?fbclid=IwAR32GBWlm7EIvYLdgu1s0zfjtgE6_ythSoxZf1nB6E3enjMI62gW7ScCmSc"
+          >Instagram<br>
+          </a>
+        </li>
+        <hr>
+        <li class="services list-inline">
+          <a class = "text-dark" href=
+          "https://www.bokadirekt.se/places/soulspark-42228?fbclid=IwAR29WLDzKCVApMyVjm6wU5qPk0hQn_oxAs1n0Ypg0v6EMAkd7mlF3gP_oEo"
+          >Booking<br>
+          </a>
+        </li>
+
+                    
+                </ul>
+            </div>
+            
+          </div>
+      </div>
+{% endblock %}
