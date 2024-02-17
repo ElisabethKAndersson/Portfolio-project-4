@@ -1,4 +1,4 @@
-{% extends "presentation/base.html" %} {% block title %}Home {%endblock %}
+{% extends "presentation/base.html" %} {% load static %} {% block title %}Home {%endblock %}
 <br />
 {% block content %}
 
@@ -8,13 +8,19 @@
         <div class="col-sm-12 col-md-12 col-lg-6 list-inline">
             <a class="room" href="../images/preview_.jfif" alt="Room"> </a>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 list-inline list-text">
-                <ul id="nav" class="coaching"></ul>
+       
+        <div class="container h-100">
+            <div class="row ">
+                <div class="col-12 col-md-6 mt-5 d-flex ">
+                    <img class="image_room img-thumbnail" src = "{% static 'images/preview_.jpg' %}" alt="Sussi Johansson">
+                </div>
+                <div class="col-12 col-md-5  mt-5">
+          
+                    <ul id="nav" class="coaching"></ul>
                     <h1>Coaching</h1>
                     <li class="services">
                         <p>Soulcoaching 1h <br>
                         60 minuter, 750 kr</p>
-                    </li>
                     <li class="services">
                         <p>Soulcoaching Expansion 1,5h<br>
                             90 minuter, 1 125 kr</p>
@@ -22,12 +28,13 @@
                         <p>Coachpaket 3 sessioner 1h/tillfälle<br>
                             60 minuter, 2 100 kr</p>
                     </li>
-                    </li>
                     <li class="services">
                         <p>Coachpaket 3 sessioner 1h/tillfälle <br>
                             90 minuter, 3 000 kr</p>
                     </li>
                 </ul>
+            </div>
+            
         </div>
     </div>
 </div>

@@ -76,7 +76,7 @@
           <!-- Navbar links -->
           <nav class="navbar navbar-light bg-light p-0 d-flex col-12">
             <ul id="nav" class="list-inline menucontainer w-100">
-                <li class="d-sm-none col-md-2 list-inline-item">
+                <li class="col-0 col-lg-2 list-inline-item filler">
                   <span class="">&nbsp; </span>
                 </li>
               <a href="{% url 'index' %}">
@@ -103,9 +103,9 @@
               <!-- Sign In/Out of account -->
               {% if user.is_authenticated %}
 
-              <li class="col-sm-6 col-md-2 list-inline-item">
+              <li class="col-sm-6 col-md-4 col-lg-2 list-inline-item ">
                 <a class="sign_in text-dark" href="{% url 'account_email' %}">
-                  <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
+                  <button type="button" class="btn btn-sm btn-outline-dark sign-btn position-relative">
                     Change E-mail
                 </a>
                 <a class="sign_in text-dark" href="{% url 'account_logout' %}">  
@@ -134,8 +134,8 @@
     </header>
     {% endblock %}
   {% block footer %}
-    <footer>
-      <div class="footer fixed-bottom"></div>
+    <footer class="d-sm-none d-md-block">
+      <div class="footer fixed-bottom "></div>
     </footer>
   {% endblock%}
 
