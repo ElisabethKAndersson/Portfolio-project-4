@@ -45,19 +45,20 @@
       <!-- Logo and top color with title-->
       <div class="container no-gutters w-100">
         <div class="row">
-          <div class="col-12 ml-3 justify-content-center">
+          <div class="col-12 col-ml-3 justify-content-center">
             <a class="p-0" href="#">
-              <img class="m-2" src="../../../static/images/{{'soulsparklogo.jpg'}}" width="250" height="250" alt="logo">
+              <img class="m-2" src="{% static 'images/soulsparklogo.jpg' %}" width="250" height="250" alt="logo">
             </a>
           </div>
               <!-- Sign to alert user that sign in was successful-->
               {% if messages %} {% for message in messages %}
-              <div class="alert alert-success align-end" role="alert">{{ message }}</div>
+              <div class="alert alert-success justify-content-end" role="alert">{{ message }}</div>
               {% endfor %} {% endif %}  
-          </div>
         </div>
       </div>
-      <!-- Menu line -->
+      <!-- Navbar -->
+
+      <!-- Navbar collapse-->
       <nav class="navbar navbar-expand-md navbar-light bg-light p-0 wt-100">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,9 +72,11 @@
                         </a>
                     </div>
                 </li>
+            
+          <!-- Navbar links -->
           <nav class="navbar navbar-light bg-light p-0 d-flex col-12">
             <ul id="nav" class="list-inline menucontainer w-100">
-                <li class="col-sm-none col-md-2 list-inline-item">
+                <li class="d-sm-none col-md-2 list-inline-item">
                   <span class="">&nbsp; </span>
                 </li>
               <a href="{% url 'index' %}">
@@ -96,33 +99,31 @@
                   <span class="menu-text">Contact</span>
                 </li>
               </a>
+
+              <!-- Sign In/Out of account -->
               {% if user.is_authenticated %}
-              
-              <li class="col-sm-6 col-md-1 list-inline-item">
-                <a class="sign_in" href="{% url 'account_email' %}">
+
+              <li class="col-sm-6 col-md-2 list-inline-item">
+                <a class="sign_in text-dark" href="{% url 'account_email' %}">
                   <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
                     Change E-mail
                 </a>
-              </li>
-              
-              <li class="col-sm-6 col-md-1 list-inline-item">
-                <a class="sign_in" href="{% url 'account_logout' %}">
-                  <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
+                <a class="sign_in text-dark" href="{% url 'account_logout' %}">  
+                  <button type="button" class="btn btn-sm btn-outline-dark sign-btn ml-2">
                     Sign Out
-                </a>
+              </a>
               </li>
-              
               {% else %}
-              <li class="col-sm-6 col-md-2 list-inline-item ">
+              <li class="col-sm-6 col-md-2 list-inline-item">
                   <a class="sign_in text-dark" href="{% url 'account_login' %}">
                     <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
                       Sign In
                   </a>
                   <a class="sign_in text-dark" href="{% url 'account_signup' %}">  
-                    <button type="button" class="btn btn-sm btn-outline-dark sign-btn text-dark ml-2">
+                    <button type="button" class="btn btn-sm btn-outline-dark sign-btn ml-2">
                       Sign Up
                 </a>
-              </li>
+                </li>
               
               {% endif %}
                 

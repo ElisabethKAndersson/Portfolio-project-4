@@ -1,31 +1,36 @@
-{% extends "presentation/base.html" %} {% block title %}Home {%endblock %}
+{% extends "presentation/base.html" %} {% load static %} {% block title %}Home {%endblock %}
 
 <br />
 {% block content %}
+
+
 <!-- Text that describes the idea of the bussiness-->
-<div class="row no-gutters">
-  <div class="col-sm-12 col-md-8 col-lg-8">
-    <div class="row no-gutters d-flex justify-content-center presentation_text">
-      <p>
-        Finns det en längtan inom dig att kunna älska dig själv fullt ut utan
-        tvivel på din egna kapacitet att värdesätta dig och dina behov? Jag
-        heter Sussie Johansson och har själv gjort en resa från stress,
-        depressioner, ångest, dålig självkänsla och vilsenhet till att börja
-        LEVA mer för MIN SKULL, älska och värdesätta mig själv! Jag vet att det
-        är möjligt att förändra sitt liv, att allt är möjligt och jag hjälper
-        dig gärna att finna din unika väg i livet. Jag brinner nu för att stötta
-        dig i din förändringsprocess och min specialitè är att guida dig att nå
-        din inre källa av visdom, kärlek och kraft och att kunna frigöra
-        blockeringar och begränsningar du upplever i ditt liv! Jag brinner för
-        att hjälpa dig till att uppleva och LEVA MERA i djup och kärleksfull
-        närvaro med dig själv och din omvärld. Välkommen att boka din session!
-        -Lyssna på din inre vägledning och ditt hjärtas intelligens, du har alla
-        svaren inom dig! Kärlek Sussie Johansson SoulSpark
-      </p>
-      <h3 class="signature">- Soulcoach, Sussi Johansson</h3>
-    </div>
+
+<div class="container h-100">
+  <div class="row flex-sm-row-reverse ">
+      <div class="col-12 col-md-6 mt-5 d-flex justify-content-center">
+          <img class="image" src = "{% static 'images/sussie.jpg' %}" alt="Sussi Johansson">
+      </div>
+      <div class="col-12 col-md-6 mt-5 ">
+
+          <p class="presentation_text">
+            Finns det en längtan inom dig att kunna älska dig själv fullt ut utan
+            tvivel på din egna kapacitet att värdesätta dig och dina behov? Jag
+            heter Sussie Johansson och har själv gjort en resa från stress,
+            depressioner, ångest, dålig självkänsla och vilsenhet till att börja
+            LEVA mer för MIN SKULL, älska och värdesätta mig själv! Jag vet att det
+            är möjligt att förändra sitt liv, att allt är möjligt och jag hjälper
+            dig gärna att finna din unika väg i livet. Jag brinner nu för att stötta
+            dig i din förändringsprocess och min specialitè är att guida dig att nå
+            din inre källa av visdom, kärlek och kraft och att kunna frigöra
+            blockeringar och begränsningar du upplever i ditt liv! Jag brinner för
+            att hjälpa dig till att uppleva och LEVA MERA i djup och kärleksfull
+            närvaro med dig själv och din omvärld. Välkommen att boka din session!
+            -Lyssna på din inre vägledning och ditt hjärtas intelligens, du har alla
+            svaren inom dig! Kärlek Sussie Johansson SoulSpark   
+          </p>
+          <h3 class="signature">- Soulcoach, Sussi Johansson</h3>
+      </div>
+      
   </div>
-  <!-- Picture of bussiness owner-->
-  <div class="col-4 image" alt="Sussi Johansson"> </div>
-</div>
 {% endblock %}

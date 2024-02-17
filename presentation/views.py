@@ -80,4 +80,3 @@ def delete_review(request, item_id):
     return redirect('reviews')
 
 
-# Booking page
