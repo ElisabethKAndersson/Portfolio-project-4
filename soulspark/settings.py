@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import django_heroku
 
 if os.path.isfile("env.py"):
     import env
@@ -36,7 +37,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-
+django_heroku.settings(locals())
 
 ALLOWED_HOSTS = ['soulspark-2b23afca50ab.herokuapp.com', 'localhost',
                  '8000-elisabethka-portfoliopr-klh656siqe5.ws-eu108.gitpod.io',
