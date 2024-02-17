@@ -1,0 +1,20 @@
+{% extends "presentation/base.html" %} {% block title %}Post {% endblock %}
+<br />
+
+{% block content %} {%load crispy_forms_tags %} {% if user.is_authenticated %}
+
+<h2 class="d-flex justify-content-center mt-5 mb-2" >Write a Review</h2>
+
+<div class="d-flex justify-content-center ml-2 mr-2">
+  <form method="POST" action="{% url 'leave_review' %}">
+    {% csrf_token %} {{ form | crispy }}
+    <div>
+      <p>
+        <button type="submit">Post review</button>
+      </p>
+    </div>
+  </form>
+</div>
+{% else %}
+<p">Signup / login to leave a review.</p>
+{% endif %} {% endblock %}

@@ -52,7 +52,8 @@
           </div>
               <!-- Sign to alert user that sign in was successful-->
               {% if messages %} {% for message in messages %}
-              <div class="alert alert-success align-end" role="alert">{{ message }}</div>
+              <br />
+              <div class="alert alert-success" role="alert">{{ message }}</div>
               {% endfor %} {% endif %}  
           </div>
         </div>
@@ -71,11 +72,15 @@
                         </a>
                     </div>
                 </li>
+
+
           <nav class="navbar navbar-light bg-light p-0 d-flex col-12">
             <ul id="nav" class="list-inline menucontainer w-100">
+              <a href="#">
                 <li class="col-sm-none col-md-2 list-inline-item">
-                  <span class="">&nbsp; </span>
+                  <span class="menu-text">&nbsp; </span>
                 </li>
+              </a>
               <a href="{% url 'index' %}">
                 <li class="col-sm-6 col-md-2 list-inline-item menu-link ">
                   <span class="menu-text">Home</span>
@@ -96,34 +101,33 @@
                   <span class="menu-text">Contact</span>
                 </li>
               </a>
+
               {% if user.is_authenticated %}
-              
-              <li class="col-sm-6 col-md-1 list-inline-item">
-                <a class="sign_in" href="{% url 'account_email' %}">
+              <a class="sign_in" href="{% url 'account_email' %}">
+                <li class="col-sm-6 col-md-1 list-inline-item">
                   <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
                     Change E-mail
-                </a>
-              </li>
-              
-              <li class="col-sm-6 col-md-1 list-inline-item">
-                <a class="sign_in" href="{% url 'account_logout' %}">
+                </li>
+              </a>
+              <a class="sign_in position-absolute " href="{% url 'account_logout' %}">
+                <li class="col-sm-6 col-md-1 list-inline-item">
                   <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
                     Sign Out
-                </a>
-              </li>
-              
+                </li>
+              </a>
               {% else %}
-              <li class="col-sm-6 col-md-2 list-inline-item ">
-                  <a class="sign_in text-dark" href="{% url 'account_login' %}">
+                <div class="col-sm-6 col-md-1 list-inline-item">
+                  <a class=" text-dark " href="{% url 'account_login' %} ">
                     <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
-                      Sign In
+                    Sign In 
                   </a>
-                  <a class="sign_in text-dark" href="{% url 'account_signup' %}">  
-                    <button type="button" class="btn btn-sm btn-outline-dark sign-btn text-dark ml-2">
-                      Sign Up
-                </a>
-              </li>
-              
+                </div>
+                <div class="col-sm-6 col-md-1 list-inline-item">
+                  <a class= "sign_in_2 text-dark" href="{% url 'account_signup' %}">
+                    <button type="button" class="btn btn-sm btn-outline-dark sign-btn ">
+                        Sign Up
+                  </a>
+                </div>
               {% endif %}
                 
             </ul>
