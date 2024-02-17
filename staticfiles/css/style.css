@@ -1,0 +1,110 @@
+body {
+    background-color: #edeae5;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*--------------------------------------------Base */
+header {
+    background-color: #026670;
+    background-size: cover;
+    color: black;
+}
+
+span {
+    color: black;
+}
+
+.menucontainer {
+    background-color: #9fedd7;
+}
+
+.menu-link:hover {
+    text-decoration: none;
+    background-color: #026670;
+    margin: 0;
+}
+
+.sign_in_1:hover {
+    text-decoration: none;
+    object-position: right;
+}
+
+.sign_in_2 {
+    text-decoration: none;
+    object-position: left; 
+}
+
+.sign-btn:hover {
+    text-decoration: none;
+    background-color: #026670;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menucontainer {
+    font-size: 0;
+    margin: 0;
+}
+
+#nav li {
+    font-size:  18px;
+    text-align: center;
+    padding: 0;
+    height: 50px;
+    padding-top: 10px;
+}
+
+
+.footer {
+    background-color: #026670;
+    height: 50px;
+}
+
+
+/*--------------------------------------------Index */
+
+.image {
+    min-height: 300px;
+    max-height: 400px;
+    margin: auto 0;
+}
+
+
+
+
+/*--------------------------------------------Reviews */
+
+.review_text {
+    font-size: x-large;
+}
+
+.review_add {
+    font-size: small;
+    margin-top: 3px;
+}
+
+.badge {
+    background-color: ;
+}
+
+
+/*--------------------------------------------Prices*/
+
+.image_room {
+    max-height: 400px;
+}
+
+@media only screen and (max-width:768px) {
+    
+    footer {
+        position: unset;
+        display: none;
+    }
+
+    .filler {
+        position: unset;
+        display: none;
+    }
+}
