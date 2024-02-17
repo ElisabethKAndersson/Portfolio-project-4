@@ -1,1 +1,1 @@
-web: gunicorn soulspark.wsgi
+web: gunicorn django_todo:application
