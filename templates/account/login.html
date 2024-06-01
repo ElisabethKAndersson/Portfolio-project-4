@@ -1,4 +1,6 @@
-{% extends 'base.html' %}
+{% extends "base.html" %} {% load static %} {% block title %}Login{%endblock %}
+
+
 {% block content %}
 <div>
 <p>If you have not created an account yet, then please
@@ -13,5 +15,5 @@
       <aclass="button secondaryAction"href="{% url 'account_reset_password' %}">Forgot password?</a>
       <buttonclass="primaryAction"type="submit">SIgn in</button>
     </form>
-    {% endblock content %}
+  {% endblock content %}
 </div>
