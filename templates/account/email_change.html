@@ -1,13 +1,7 @@
-{% extends "account/base_manage_email.html" %}
+{% extends "base.html" %} {% load static %} {% block title %}Change Email{%endblock %}
 {% load i18n %}
 {% load allauth %}
-{% block head_title %}
-    {% trans "Email Address" %}
-{% endblock head_title %}
-{% block content %}
-    {% element h1 %}
-        {% trans "Email Address" %}
-    {% endelement %}
+
     {% if emailaddresses %}
         {% if current_emailaddress %}
             <p>

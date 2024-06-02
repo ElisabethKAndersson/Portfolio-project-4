@@ -1,10 +1,9 @@
-{% extends "account/base_entrance.html" %}
+{% extends "base.html" %} {% load static %} {% block title %}Confirm Email Address{%endblock %}
+
 {% load i18n %}
 {% load account %}
 {% load allauth %}
-{% block head_title %}
-    {% trans "Confirm Email Address" %}
-{% endblock head_title %}
+
 {% block content %}
     {% element h1 %}
         {% trans "Confirm Email Address" %}

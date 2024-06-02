@@ -1,11 +1,9 @@
-{% extends "account/base_manage.html" %}
+{% extends "base.html" %} {% load static %} {% block title %}Confirm Access{%endblock %}
 {% load allauth %}
 {% load i18n %}
-{% block head_title %}
-    {% trans "Confirm Access" %}
-{% endblock head_title %}
+
 {% block content %}
-    {% element h1 %}
+    {% element h2 %}
         {% trans "Confirm Access" %}
     {% endelement %}
     <p>
