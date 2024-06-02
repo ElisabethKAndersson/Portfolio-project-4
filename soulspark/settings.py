@@ -44,23 +44,22 @@ ALLOWED_HOSTS = ['soulspark-2b23afca50ab.herokuapp.com', 'localhost',
 # Application definition
 
 INSTALLED_APPS = [
+    
     'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django.contrib.auth',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+
+    'presentation.apps.PresentationConfig',    
     'django.contrib.staticfiles',
     'cloudinary_storage',
     'cloudinary',
     'crispy_forms',
-
-    'presentation.apps.PresentationConfig',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
