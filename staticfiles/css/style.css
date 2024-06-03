@@ -48,6 +48,10 @@ span {
     margin: 0;
 }
 
+.navbar {
+    background-color: #9fedd7;
+}
+
 #nav li {
     font-size:  18px;
     text-align: center;

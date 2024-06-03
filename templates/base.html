@@ -58,7 +58,7 @@
       <!-- Navbar -->
 
       <!-- Navbar collapse-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 wt-100">
+      <nav class="navbar navbar-expand-md navbar-light p-0 wt-100">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,7 +75,7 @@
           <!-- Navbar links -->
           <nav class="navbar navbar-light bg-light p-0 d-flex col-12">
             <ul id="nav" class="list-inline menucontainer w-100">
-                <li class="col-0 col-lg-2 list-inline-item filler">
+                <li class="col-md-1 col-lg-2 list-inline-item filler">
                   <span class="">&nbsp; </span>
                 </li>
               <a href="{% url 'index' %}">
@@ -102,7 +102,7 @@
               <!-- Sign In/Out of account -->
               {% if user.is_authenticated %}
 
-              <li class="col-sm-6 col-md-4 col-lg-2 list-inline-item ">
+              <li class="col-sm-6 col-md-3 col-lg-2 list-inline-item ">
                 <a class="sign_in text-dark" href="{% url 'account_email' %}">
                   <button type="button" class="btn btn-sm btn-outline-dark sign-btn position-relative">
                     Change E-mail
@@ -113,17 +113,16 @@
               </a>
               </li>
               {% else %}
-              <li class="col-sm-6 col-md-2 list-inline-item">
-                  <a class="sign_in text-dark" href="{% url 'account_login' %}">
+              <li class="col-sm-6 col-md-3 col-lg-2 list-inline-item">
+                  <a class="sign_in text-dark list-inline-item" href="{% url 'account_login' %}">
                     <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
                       Sign In
                   </a>
-                  <a class="sign_in text-dark" href="{% url 'account_signup' %}">  
+                  <a class="sign_in text-dark list-inline-item" href="{% url 'account_signup' %}">  
                     <button type="button" class="btn btn-sm btn-outline-dark sign-btn ml-2">
                       Sign Up
                 </a>
-                </li>
-              
+              </li>
               {% endif %}
                 
             </ul>
@@ -136,7 +135,7 @@
     <div id="content">{% block content %}{% endblock %}</div>
     
   {% block footer %}
-    <footer class="d-sm-none d-md-block mt-auto">
+    <footer class="d-block mt-auto">
       <div class="footer"></div>
     </footer>
   {% endblock%}
