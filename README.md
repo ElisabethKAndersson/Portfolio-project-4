@@ -78,10 +78,10 @@ To be able to keep updated with changes in services.
 
 ### Colour Scheme
 
-The client go to pick color scheme from this page: https://visme.co/blog/website-color-schemes/
+The client go to pick colour scheme from this page: https://visme.co/blog/website-color-schemes/
 She had three she liked better. I picked the final one because I thought it worked best with her logo.
 
-
+![Colour](readmeimages/Color%20Soulspark.PNG) 
 
 ### Typography
 
