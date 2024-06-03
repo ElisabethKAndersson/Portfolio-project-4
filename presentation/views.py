@@ -42,8 +42,6 @@ def leave_review(request):
     if request.method == 'POST':
         if request.user.is_authenticated:
             form = ItemForm(request.POST)
-
-           
             
             if form.is_valid():
                 obj = form.save(commit=False) 

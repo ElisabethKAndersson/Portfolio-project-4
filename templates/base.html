@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,7 +39,7 @@
     <title>{% block title %}Soulspark{% endblock %}</title>
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     {% block header %}
     <header class>
       <!-- Logo and top color with title-->
@@ -132,13 +132,16 @@
       
     </header>
     {% endblock %}
+
+    <div id="content">{% block content %}{% endblock %}</div>
+    
   {% block footer %}
-    <footer class="d-sm-none d-md-block">
-      <div class="footer fixed-bottom "></div>
+    <footer class="d-sm-none d-md-block mt-auto">
+      <div class="footer"></div>
     </footer>
   {% endblock%}
 
-    <div id="content">{% block content %}{% endblock %}</div>
+
   </body>
  
 </html>
