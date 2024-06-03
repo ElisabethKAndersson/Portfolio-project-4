@@ -43,19 +43,18 @@
     {% block header %}
     <header class>
       <!-- Logo and top color with title-->
-      <div class="container no-gutters w-100">
-        <div class="row">
-          <div class="col-12 col-ml-3 justify-content-center">
-            <a class="p-0" href="#">
+      
+        <div class="d-flex justify-content-center"> 
+            <a class="p-0 " href="#">
               <img class="m-2" src="{% static 'images/soulsparklogo.jpg' %}" width="250" height="250" alt="logo">
             </a>
-          </div>
+          
               <!-- Sign to alert user that sign in was successful-->
               {% if messages %} {% for message in messages %}
               <div class="alert alert-success justify-content-end" role="alert">{{ message }}</div>
               {% endfor %} {% endif %}  
         </div>
-      </div>
+      
       <!-- Navbar -->
 
       <!-- Navbar collapse-->
