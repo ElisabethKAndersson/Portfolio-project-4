@@ -20,7 +20,6 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
   * [Imagery](#imagery)
-  * [Wireframes](#wireframes)
 
 * [Features](#features)
   * [General Features on Each Page](#general-features-on-each-page)
@@ -79,33 +78,21 @@ To be able to keep updated with changes in services.
 ### Colour Scheme
 
 The client go to pick colour scheme from this page: https://visme.co/blog/website-color-schemes/
-She had three she liked better. I picked the final one because I thought it worked best with her logo.
+She had three she liked better. I picked the one I thought it worked best with her logo.
 
 ![Colour](readmeimages/Color%20Soulspark.PNG) 
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
-
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
-
-I also like to include an image of the fonts chosen as a reference.
+I used the Raleway font from Google Fonts. I thought it worked well with the style of the logo and the services.
 
 [Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
 
+![Font](readmeimages/font.PNG) 
+
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
-
-### Wireframes
-
-Add the images or links for your wireframes here.
-
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
-
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+The imagery is mainly of Sussie and her fascilities.
 
 ## Features
 
