@@ -4,6 +4,8 @@ from django.contrib import messages
 from .models import Item
 from .forms import ItemForm
 from django.core.paginator import Paginator
+# from .forms import LeaveReview, Post
+
 
 
 # Index page
@@ -44,7 +46,7 @@ def leave_review(request):
             
             if form.is_valid():
                 obj = form.save(commit=False) 
-                obj.author = request.user
+                obj.author_id = request.user.id
                 obj.save() 
             else:
                 print("ERROR : Form is invalid")
@@ -61,12 +63,8 @@ def edit_review(request, item_id):
     item = get_object_or_404(Item, id=item_id)
     if request.method == 'POST':
         form = ItemForm(request.POST, instance = item)
-        if form.is_valid() and context.author == request.user:
+        if form.is_valid() and item.author_id == request.user.id:
             form.save()
-        else:
-            messages.add_message(request, messages.ERROR,
-                                 'You can only delete your own review!')
-                                
             return redirect('reviews')
     form = ItemForm(instance=item)
     context = {
@@ -76,9 +74,8 @@ def edit_review(request, item_id):
 
 
 def delete_review(request, item_id):
-    
     item = get_object_or_404(Item, id=item_id)
-    if contexts.author == request.user:
+    if item.author_id == request.user.id:
         item.delete()
     else:
         messages.add_message(request, messages.ERROR,
