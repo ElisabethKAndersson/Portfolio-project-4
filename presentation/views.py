@@ -61,7 +61,7 @@ def edit_review(request, item_id):
     item = get_object_or_404(Item, id=item_id)
     if request.method == 'POST':
         form = ItemForm(request.POST, instance = item)
-        if form.is_valid() and obj.author == request.user:
+        if form.is_valid() and context.author == request.user:
             form.save()
         else:
             messages.add_message(request, messages.ERROR,
@@ -78,7 +78,7 @@ def edit_review(request, item_id):
 def delete_review(request, item_id):
     
     item = get_object_or_404(Item, id=item_id)
-    if obj.author == request.user:
+    if contexts.author == request.user:
         item.delete()
     else:
         messages.add_message(request, messages.ERROR,
