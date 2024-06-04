@@ -1,23 +1,22 @@
 {% extends "base.html" %} {% load static %} {% block title %}Home {%endblock %}
-
-<br />
-
 {% block content %}
        
 <div class="no-gutters">
     <div class="col-12 list-inline">    
         <div class="col-sm-12 col-md-12 col-lg-6 list-inline">
-            <a class="room" href="../images/preview_.jfif" alt="Room"> </a>
+            <a class="room" href="../images/preview_.jfif" title="Room"> </a>
         </div>
        
         <div class="container h-100">
             <div class="row">
                 <div class="col-12 col-lg-6 mt-md-5 mt-2 d-flex ">
-                    <img class="image_room img-thumbnail" src = "{% static 'images/preview_.jpg' %}" alt="Sussi Johansson">
+                    <img class="image_room img-thumbnail" src = "{% static 'images/preview_.jpg' %}" title="Sussi Johansson">
                 </div>
                 <div class="col-12 col-md-5  mt-lg-5 mt-2">
-                    <ul id="nav" class="coaching"></ul>
-                        <h2>Coaching</h2>
+                    <ul id="nav" class="coaching">
+                        <li class="services">
+                            <h2 class="pb-3">Coaching</h2>
+                        </li>
                         <li class="services">
                             <p>Soulcoaching 1h <br>
                             60 minuter, 750 kr</p>

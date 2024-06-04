@@ -35,7 +35,6 @@ The Soulspark website is a page used to promote the Soulspark coaching services.
   * [Code Used](#code-used)
   * [Content](#content)
   * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -175,5 +174,5 @@ The content was mostly written by Sussie Johansson who is the running the Soulsp
 
 ###  Media
 
-All images come from Sussie Johansson.
+All images have been required from Sussie Johansson.
   

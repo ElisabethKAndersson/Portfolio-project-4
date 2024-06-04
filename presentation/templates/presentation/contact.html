@@ -1,8 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block title %}Home {%endblock %}
-<br />
 {% block content %}
-
-        
 
 <div class="container h-100">
   <div class="row justify-content-center ">
@@ -10,12 +7,13 @@
       <img class="image_room img-thumbnail" src = "{% static 'images/preview_.jpg' %}" alt="Sussi Johansson">
     </div>
     <div class="col-12 col-md-5  mt-5">
-      <ul id="nav" class="contact"></ul>
-        <h1>Contact</h1>
+      <ul id="nav" class="contact">
+        <li class="services list-inline pb-3">
+          <h2>Contact</h2>
+        </li>
         <li class="services list-inline">
           <p>Email: <br>
-            soulsparksussie@outlook.com</p>
-                    
+            soulsparksussie@outlook.com</p>        
         <li class="services list-inline mb-2">
           <a class = "text-dark" href="https://www.facebook.com/soulspark.sussie.johansson/about">Facebook<br>
           </a>
@@ -26,18 +24,15 @@
           >Instagram<br>
           </a>
         </li>
-        <hr>
         <li class="services list-inline">
+          <hr>
           <a class = "text-dark" href=
           "https://www.bokadirekt.se/places/soulspark-42228?fbclid=IwAR29WLDzKCVApMyVjm6wU5qPk0hQn_oxAs1n0Ypg0v6EMAkd7mlF3gP_oEo"
           >Booking<br>
           </a>
         </li>
-
-                    
-                </ul>
-            </div>
-            
-          </div>
-      </div>
+      </ul>
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -1,18 +1,15 @@
 {% extends "base.html" %} {% block title %} Reviews {%endblock %}
-<br />
 {% block content %}
 
     <!-- Code to show reviews -->
-    <table> 
-
-    {% for item in reviews_list %}
+    <table>
+        {% for item in reviews_list %}
         <div class = "reviews d-flex justify-content-center mt-5 pt-5">
             <h1 class = "review_text badge text-wrap text-left w-50">{{ item.context }} <span class="badge text-secondary">-{{ item.name }}</span></h1>
         </div>
-        <div class = "d-flex justify-content-center pt-2">
 
-            <!--Buttons to edit / delete reviews created by logged in user-->
-        
+        <!--Buttons to edit / delete reviews created by logged in user-->
+        <div class = "d-flex justify-content-center pt-2">
             {% if user.is_authenticated and user == item.author %}
                 <a class="mr-1" href="/edit/{{ item.id }}">
                     <button type="button" class="btn btn-primary btn-sm">Edit</button>

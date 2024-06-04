@@ -3,22 +3,23 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       type="text/css"
     />
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css"
     />
 
-    <link rel="stylesheet" href="../../../static/css/style.css" />
+    <link rel="stylesheet" href="../../../static/css/style.css"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Raleway&display=swap"
       rel="stylesheet"
@@ -64,45 +65,43 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center navbar-style w-100" id="navbarNav">
-                <li class="list-inline-item dropdown">
+                <div class="list-inline-item dropdown">
                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
                         <a href="{% url 'reviews' %}" class="dropdown-item">Services</a>
-
-                        </a>
                     </div>
-                </li>
+                </div>
             
           <!-- Navbar links -->
           <nav class="navbar navbar-light bg-light p-0 d-flex col-12">
-            <ul id="nav" class="list-inline menucontainer w-100">
-                <li class="col-md-1 col-lg-2 list-inline-item filler">
+            <div id="nav" class="list-inline menucontainer w-100">
+                <div class="navlink col-md-1 col-lg-2 list-inline-item filler">
                   <span class="">&nbsp; </span>
-                </li>
+                </div>
               <a href="{% url 'index' %}">
-                <li class="col-sm-6 col-md-2 list-inline-item menu-link ">
+                <div class="navlink col-sm-6 col-md-2 list-inline-item menu-link ">
                   <span class="menu-text">Home</span>
-                </li>
+                </div>
               </a>
               <a href="{% url 'reviews' %}">
-                <li class="col-sm-6 col-md-2 list-inline-item menu-link">
+                <div class="navlink col-sm-6 col-md-2 list-inline-item menu-link">
                   <span class="menu-text">Reviews</span>
-                </li>
+                </div>
               </a>
               <a href="{% url 'prices' %}">
-                <li class="col-sm-6 col-md-2 list-inline-item menu-link">
+                <div class="navlink col-sm-6 col-md-2 list-inline-item menu-link">
                   <span class="menu-text">Prices</span>
-                </li>
+                </div>
               </a>
               <a href="{% url 'contact' %}">
-                <li class="col-sm-6 col-md-2 list-inline-item menu-link">
+                <div class="navlink col-sm-6 col-md-2 list-inline-item menu-link">
                   <span class="menu-text">Contact</span>
-                </li>
+                </div>
               </a>
 
               <!-- Sign In/Out of account -->
               {% if user.is_authenticated %}
 
-              <li class="col-sm-6 col-md-3 col-lg-2 list-inline-item ">
+              <div class="navlink col-sm-6 col-md-3 col-lg-2 list-inline-item ">
                 <a class="sign_in text-dark" href="{% url 'account_email' %}">
                   <button type="button" class="btn btn-sm btn-outline-dark sign-btn position-relative">
                     Change E-mail
@@ -111,9 +110,9 @@
                   <button type="button" class="btn btn-sm btn-outline-dark sign-btn ml-2">
                     Sign Out
               </a>
-              </li>
+            </div>
               {% else %}
-              <li class="col-sm-6 col-md-3 col-lg-2 list-inline-item">
+              <div class="navlink col-sm-6 col-md-3 col-lg-2 list-inline-item">
                   <a class="sign_in text-dark list-inline-item" href="{% url 'account_login' %}">
                     <button type="button" class="btn btn-sm btn-outline-dark sign-btn">
                       Sign In
@@ -121,7 +120,7 @@
                   <a class="sign_in text-dark list-inline-item" href="{% url 'account_signup' %}">  
                     <button type="button" class="btn btn-sm btn-outline-dark sign-btn ml-2">
                       Sign Up
-                </a>
+                  </a>
               </li>
               {% endif %}
                 
