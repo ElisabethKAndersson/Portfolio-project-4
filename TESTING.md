@@ -7,8 +7,6 @@
 
 * [AUTOMATED TESTING](#automated-testing)
   * [W3C Validator](#w3c-validator)
-  * [Lighthouse](#lighthouse)
-  * [WAVE](#wave)
 
 * [MANUAL TESTING](#manual-testing)
   * [Testing User Stories](#testing-user-stories)
@@ -16,7 +14,6 @@
 
 * [BUGS](#bugs)
   * [Known Bugs](#known-bugs)
-  * [Solved Bugs](#solved-bugs)
 
 ---
 
@@ -43,8 +40,7 @@ CSS Validator passed without error
 
 ### Testing User Stories
 
-#### First Time Visitor Goals:
-
+ #### First Time Visitor Goals:
  * To be able to see what kind of bussiness this is: 
     - There is a presentation of the service offered on the index page.
 
@@ -57,8 +53,7 @@ CSS Validator passed without error
   * To be able to find out more by links to social accounts.
     - There is a Contact page with links to social accounts
 
-#### Returning Visitor Goals:
-
+ #### Returning Visitor Goals:
   * To be able to find contact information to Sussie.
    - There is a Contact page with contact information.
   
@@ -68,7 +63,7 @@ CSS Validator passed without error
   * To be able to write a review.
     - There is a service where costumers can log in and leave reviews.
 
-#### Frequent Visitor Goals:
+ #### Frequent Visitor Goals:
   * To be able to keep updated with changes in services.
     - The service page can be adapted to changes in services.
 
@@ -107,14 +102,23 @@ CSS Validator passed without error
     * Changing password
       - Works
 
+  #### Reviews
+    * Leave a review
+      - Works
+    
+    * Edit and delete you own reviews
+      - Works when signed in
+
+    * Read others reviews
+      - Works
+
+  #### Admin login
+    * Superuser login to Admin
+      - Works
+
+
 ## BUGS
 
 ### Known Bugs
 
-List (or put in a table) all known bugs on your site here as soon as you find them. This will prevent you from forgetting any at the end. Some (if not all) of these bugs will hopefully make their way over to the next section, solved bugs, as you progress through your project.
-
-### Solved Bugs
-
-👩🏻‍💻View an example of a completed bugs section [here](https://github.com/kera-cudmore/BookWorm/blob/main/TESTING.md#BUGS)
-
-This is where all solved bugs go once squashed. List what the bug was, and how you managed to fix it. You can also include images/videos here if you wanted.
+No known bugs
