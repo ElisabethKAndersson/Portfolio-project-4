@@ -46,37 +46,66 @@ CSS Validator passed without error
 #### First Time Visitor Goals:
 
  * To be able to see what kind of bussiness this is: 
-  There is a presentation of the service offered on the index page.
+    - There is a presentation of the service offered on the index page.
 
   * To be able to see what services are offered:
-  There is a page with list of services and prices.
+    - There is a page with list of services and prices.
 
   * To be able to see what previous costumers have said about the services.
-  There is a page where costumers can leave reviews.
+    - There is a page where costumers can leave reviews.
 
   * To be able to find out more by links to social accounts.
-  There is a Contact page with links to social accounts
+    - There is a Contact page with links to social accounts
 
 #### Returning Visitor Goals:
 
   * To be able to find contact information to Sussie.
-  There is a Contact page with contact information.
+   - There is a Contact page with contact information.
   
   * To find out how to book an appointment.
-  There is a link leading to a booking page on the Contact page.
+    - There is a link leading to a booking page on the Contact page.
 
   * To be able to write a review.
-  There is a service where costumers can log in and leave reviews.
+    - There is a service where costumers can log in and leave reviews.
 
 #### Frequent Visitor Goals:
   * To be able to keep updated with changes in services.
-  The service page can be adapted to changes in services.
+    - The service page can be adapted to changes in services.
 
 ### Full Testing
 
-👩🏻‍💻 View an example of a completed full testing section [here](https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#Full-Testing)
+ #### Links
+  * Testing all the links in the navigatin menu
+    - All working.
 
-Full testing can be tedious, so it is great to try and break this part up into smaller chunks and do a bit at a time. Full testing is when you go through the site and test every single thing that can be tested. So for example you would test that all links in the navbar correctly redirect the user to where there are supposed to go. A table is the perfect way to display this information.
+  * Sign up link in Sign in page
+    - Working
+
+  * Sign in link in Sign up page
+    - Working
+
+  * Links to social accounts and booking in Contact page
+    - Working
+
+  #### Sign Up
+    * Sign Up
+      - Works
+    
+    * Verification e-mail
+      -Works
+  
+  #### Sign In Services
+    * Sign In
+      - Works
+
+    * Add and remove e-mail
+      - Works
+
+    * Sign out
+      - Works
+
+    * Changing password
+      - Works
 
 ## BUGS
 
