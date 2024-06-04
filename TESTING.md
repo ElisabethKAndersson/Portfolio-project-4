@@ -37,37 +37,40 @@ Validated the following pages:
 
 #### **CSS Validation**
 
-CSS Validation can only be done by copying and pasting the CSS file contents into the direct input. Make sure that the checkbox for CSS is selected.
-
-![W3C CSS Validation](documentation/milestone1-testing/w3c-css-validation.png)
-
-### Lighthouse
-
-👩🏻‍💻 View an example of a completed lighthouse testing section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022/blob/main/TESTING.md#Lighthouse)
-
-Lighthouse Testing is part of the Chrome Developer Tools. For more information on how to use this tool, please visit [chrome Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en#:~:text=Lighthouse%20is%20an%20open%2Dsource,how%20well%20the%20page%20did.).
-
-You will need to run the Lighthouse testing on each individual page of your site, for desktop as a minimum. If you have time it would be great to also add in the mobile testing.
-
-![Lighthouse Testing](documentation/milestone1-testing/lighthouse.png)
-
-### WAVE
-
-👩🏻‍💻 View an example of a completed WAVE testing section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022/blob/main/TESTING.md#WAVE)
-
-[WAVE](https://wave.webaim.org/) is an accessibility testing tool. I like to run this on each page of my site and take a screenshot of the results to add here. They have a website for testing and a Chrome extension.
-
-![Wave Desktop](documentation/milestone1-testing/wave-desktop.png)
-
-![Wave Exetension](documentation/milestone1-testing/wqave-extension.png)
+CSS Validator passed without error
 
 ## MANUAL TESTING
 
 ### Testing User Stories
 
-👩🏻‍💻 View an example of a completed user stories testing section [here](https://github.com/kera-cudmore/BookWorm/blob/main/TESTING.md#Testing-User-Stories)
+#### First Time Visitor Goals:
 
-This is where you will test the user stories you created in the README against your site. I like to use a table for this section - I create a column for the user stories goals, how these have been achieved and I use the third column to add any supporting images.
+ * To be able to see what kind of bussiness this is: 
+  There is a presentation of the service offered on the index page.
+
+  * To be able to see what services are offered:
+  There is a page with list of services and prices.
+
+  * To be able to see what previous costumers have said about the services.
+  There is a page where costumers can leave reviews.
+
+  * To be able to find out more by links to social accounts.
+  There is a Contact page with links to social accounts
+
+#### Returning Visitor Goals:
+
+  * To be able to find contact information to Sussie.
+  There is a Contact page with contact information.
+  
+  * To find out how to book an appointment.
+  There is a link leading to a booking page on the Contact page.
+
+  * To be able to write a review.
+  There is a service where costumers can log in and leave reviews.
+
+#### Frequent Visitor Goals:
+  * To be able to keep updated with changes in services.
+  The service page can be adapted to changes in services.
 
 ### Full Testing
 

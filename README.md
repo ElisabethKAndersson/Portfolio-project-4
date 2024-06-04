@@ -45,23 +45,23 @@ Certified coach Sussie Johansson is offering coaching services through her bussi
 ### User Stories
 
 Clients goals:
-To be able to market the bussiness and reach out through a web page instead of only using social media.
-To be aböe to present what services the bussiness offers to potential clients.
-To be able to market and get feedback through costumer reviews.
+* To be able to market the bussiness and reach out through a web page instead of only using social media.
+* To be aböe to present what services the bussiness offers to potential clients.
+* To be able to market and get feedback through costumer reviews.
 
 First Time Visitor Goals:
-To be able to see what kind of bussiness this is.
-To be able to see what services are offered.
-To be able to see what previous costumers have said about the services.
-To be able to find out more by links to social accounts.
+* To be able to see what kind of bussiness this is.
+* To be able to see what services are offered.
+* To be able to see what previous costumers have said about the services.
+* To be able to find out more by links to social accounts.
 
 Returning Visitor Goals:
-To be able to find contact information to Sussie.
-To find out how to book an appointment.
-To be able to write a review.
+* To be able to find contact information to Sussie.
+* To find out how to book an appointment.
+* To be able to write a review.
 
 Frequent Visitor Goals:
-To be able to keep updated with changes in services.
+* To be able to keep updated with changes in services.
 
 ## Design
 
