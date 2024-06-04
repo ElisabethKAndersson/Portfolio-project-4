@@ -4,7 +4,7 @@
 <table>
     {% block content %}
 
-        <div class = "d-flex justify-content-center mt-5 pt-5">
+        <div class = "d-flex justify-content-center mt-2">
             {% if emailaddresses %}
                 <p>{% trans 'The following email addresses are associated with your account:' %}</p>
                 <br>
@@ -38,7 +38,7 @@
                             {% endfor %}
                         {% endslot %}
         </div>
-        <div class = "d-flex justify-content-center mt-5 pt-5">
+        <div class = "d-flex justify-content-center mt-2">
                         {% slot actions %}
                             {% element button type="submit" name="action_primary" %}
                                 {% trans 'Make Primary' %}
@@ -56,12 +56,12 @@
                 {% endif %}
         </div>
                 {% if can_add_email %}
-                <div class = "d-flex justify-content-center mt-5 pt-5">        
+                <div class = "d-flex justify-content-center mt-2">        
                             <h3>
                                 Add Email Address
                             </h3>
                 </div>
-                <div class = "d-flex justify-content-center mt-5 pt-5">
+                <div class = "d-flex justify-content-center mt-2">
                     {% url 'account_email' as action_url %}
                     {% element form form=form method="post" action=action_url %}
                          Hoi bef bod
