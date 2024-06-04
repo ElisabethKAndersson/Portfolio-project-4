@@ -6,7 +6,7 @@
 
         <div class = "d-flex justify-content-center mt-5">
             {% if emailaddresses %}
-                <p>{% trans 'The following email addresses are associated with your account:' %}</p>
+                <p>{% trans 'The following email addresses are associated with your account:%}</p>
                     {% url 'account_email' as email_url %}
         </div>
         <div class = "d-flex justify-content-center mt-2">
@@ -27,8 +27,6 @@
                                                     {% translate "Unverified" %}
                                                 {% endelement %}
                                             {% endif %}
-        </div>
-        <div class = "d-flex justify-content-center mt-5">
                                             {% if emailaddress.primary %}
                                                 {% element badge tags="email,primary" %}
                                                     {% translate "Primary" %}
@@ -59,9 +57,9 @@
         </div>
                 {% if can_add_email %}
                 <div class = "d-flex justify-content-center mt-5">        
-                            <h3>
+                            <h4>
                                 Add Email Address
-                            </h3>
+                            </h4>
                 </div>
                 <div class = "d-flex justify-content-center mt-2">
                     {% url 'account_email' as action_url %}
