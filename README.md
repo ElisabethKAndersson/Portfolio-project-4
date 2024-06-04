@@ -2,13 +2,7 @@
 
 The Soulspark website is a page used to promote the Soulspark coaching services. It also serves as a source of information for costumers interested in buying coaching services.
 
-
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
-
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
-
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
-
+![Soulspark homepage](readmeimages/soulsparkpage.PNG) 
 ---
 
 ## CONTENTS
@@ -24,7 +18,6 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 * [Features](#features)
   * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
-  * [Accessibility](#accessibility)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -73,8 +66,6 @@ To be able to keep updated with changes in services.
 
 ## Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
-
 ### Colour Scheme
 
 The client go to pick colour scheme from this page: https://visme.co/blog/website-color-schemes/
@@ -92,59 +83,49 @@ I used the Raleway font from Google Fonts. I thought it worked well with the sty
 
 ### Imagery
 
-The imagery is mainly of Sussie and her fascilities.
+The imagery is mainly of Sussie and her fascilities, showing a friendly and peaceful enviroment.
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
-
-This section can be used to explain what pages your site is made up of.
+The web page has a "Home" page with a greeting from the bussiness owner explaining what it is she does. There is also a page costumers can leave reviews. Services and prices can be found on another page. There is also a page with contact information as well as pages for signing up and signing in and out of an account.
 
 ### General features on each page
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
-
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+The web page has a navigation menu, making it easy to navigate between pages.
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
-
-### Accessibility
-
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+In the future I would like to add a booking system directly on the web page instead of linking to an outside service. The page would also benefit from a page were news of project of services can be posted.
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+HTML, CSS, Python, Django
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
+Bootstrap - To help create a nice layout.
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
+Github - To store and showcase project code.
 
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+Gitpod - Used for writing code.
+
+Heroku - Used for deployment
+
+Google Fonts - Import fonts to use in project.
+
+Google Dev Tools - To help troubleshoot features on the page.
 
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
+The project has been deployed through Heroku.
 
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+- Logged in to Heroku account, create a new Heroku app,
+- Link the Heroku app to the Github repository used for the project.
+- Deploy the app.
 
 ### Local Development
 
@@ -152,38 +133,47 @@ The local development section gives instructions on how someone else could make 
 
 #### How to Fork
 
-Place instructions on how to fork your project here.
+Log in to Github.
+Go to the repository for the [Soulspark](https://github.com/ElisabethKAndersson/Portfolio-project-4) project.
+Click the Fork button to de right above the code.
 
 #### How to Clone
 
-Place instructions on how to clone your project here.
+Log in to Github.
+Go to the repository for the [Soulspark](https://github.com/ElisabethKAndersson/Portfolio-project-4) project.
+Click on the code button. 
+Choose if you want to clone through HTTP, SSH or GitHub CLI.
+Copy the link.
+Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
 
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
+I would like to thank the people who helped me along the way in completing this project:
 
-The Credits section is where you can credit all the people and sources you used throughout your project.
+My Code Institute Mentor Jubril Akolade
+Tutor Support team at Code Institute.
+My kids for being understanding when I am a bit busier than usually.
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+Pagination code was created with the help of this youtube tutorial: https://youtu.be/N-PB-HMFmdo?si=4F_3XYxFpD4D8ii2
+
+I also had help from the following sites when writing code for the review function:
+https://stackoverflow.com/questions/24629705/django-using-get-user-model-vs-settings-auth-user-model
+https://stackoverflow.com/questions/35978476/how-to-display-the-post-user-created-with-if-user-is-authenticated-post-au
+https://forum.djangoproject.com/t/automatically-get-user-id-to-assignate-to-form-when-submitting/5333/8
+
 
 ### Content
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+The content was mostly written by Sussie Johansson who is the running the Soulspark bussiness.
 
 ###  Media
 
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+All images come from Sussie Johansson.
   
-###  Acknowledgments
-
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
