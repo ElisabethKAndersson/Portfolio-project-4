@@ -7,6 +7,7 @@
         <div class = "d-flex justify-content-center mt-5 pt-5">
             {% if emailaddresses %}
                 <p>{% trans 'The following email addresses are associated with your account:' %}</p>
+                <br>
                     {% url 'account_email' as email_url %}
                     {% element form form=form action=email_url method="post" %}
                         {% slot body %}
@@ -25,6 +26,7 @@
                                                     {% translate "Unverified" %}
                                                 {% endelement %}
                                             {% endif %}
+                                            <br>
                                             {% if emailaddress.primary %}
                                                 {% element badge tags="email,primary" %}
                                                     {% translate "Primary" %}
