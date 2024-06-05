@@ -5,7 +5,7 @@ The Soulspark website is a page used to promote the Soulspark coaching services.
  <img src="readmeimages/soulsparkpage.PNG" width="1000"/> 
 
 
-[Link to deplpoyed site](https://soulspark-2b23afca50ab.herokuapp.com/)
+[Link to deployed site](https://soulspark-2b23afca50ab.herokuapp.com/)
 ---
 
 ## CONTENTS
