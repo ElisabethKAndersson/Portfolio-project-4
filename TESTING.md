@@ -24,12 +24,13 @@
 
 Validated the following pages:
 
-  base.html: Passed except django code. I deliberately broke the rules to not put a button inside <a> for style purposes.
-  index.html: Passed except django code.
-  reviews.html: Passed except django code.
-  prices.html: Passed except django code.
-  contact.html: Passed except django code.
-  Leave_review: Passed except django code.
+* base.html: Passed except django code. I deliberately broke the rules to not put a button inside 'a' for style purposes.
+
+* index.html: Passed except django code.
+* reviews.html: Passed except django code.
+* prices.html: Passed except django code.
+* contact.html: Passed except django code.
+* Leave_review: Passed except django code.
 
 
 #### **CSS Validation**
@@ -41,33 +42,36 @@ CSS Validator passed without error
 ### Testing User Stories
 
  #### First Time Visitor Goals:
- * To be able to see what kind of bussiness this is: 
-    - There is a presentation of the service offered on the index page.
 
-  * To be able to see what services are offered:
-    - There is a page with list of services and prices.
+|User goal |Result   |Pass / Fail |
+| --- | --- | --- |
+| To be able to see what kind of bussiness this is | There is a presentation of the service offered on the index page.  | Pass |
+|To be able to see what services are offered | There is a page with list of services and prices. | Pass |
+|To be able to see what previous costumers have said about the services. | There is a page where costumers can leave reviews. | Pass |
+|To be able to find out more by links to social accounts. | There is a Contact page with links to social accounts| Pass |
+|  | |  |
 
-  * To be able to see what previous costumers have said about the services.
-    - There is a page where costumers can leave reviews.
-
-  * To be able to find out more by links to social accounts.
-    - There is a Contact page with links to social accounts
 
  #### Returning Visitor Goals:
-  * To be able to find contact information to Sussie.
-   - There is a Contact page with contact information.
-  
-  * To find out how to book an appointment.
-    - There is a link leading to a booking page on the Contact page.
 
-  * To be able to write a review.
-    - There is a service where costumers can log in and leave reviews.
+|User goal |Result   |Pass / Fail |
+| --- | --- | --- |
+|To be able to find contact information to Sussie. | There is a Contact page with contact information.  | Pass |
+|To find out how to book an appointment. | There is a link leading to a booking page on the Contact page. | Pass |
+|To be able to write a review. | There is a service where costumers can log in and leave reviews.| Pass |
+|  | |  |
+
 
  #### Frequent Visitor Goals:
+
   * To be able to keep updated with changes in services.
     - The service page can be adapted to changes in services.
 
+
 ### Full Testing
+
+ #### Chrome Developer Tools
+  Throughout the project Chrome Developer Tools were used to test how the project looked on different devices. The final deployed version works on the most common devices.
 
  #### Links
   * Testing all the links in the navigatin menu

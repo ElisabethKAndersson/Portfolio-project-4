@@ -3,6 +3,8 @@
 The Soulspark website is a page used to promote the Soulspark coaching services. It also serves as a source of information for costumers interested in buying coaching services.
 
 ![Soulspark homepage](readmeimages/soulsparkpage.PNG) 
+
+[Link to deplpoyed site](https://soulspark-2b23afca50ab.herokuapp.com/)
 ---
 
 ## CONTENTS
@@ -14,6 +16,7 @@ The Soulspark website is a page used to promote the Soulspark coaching services.
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
   * [Imagery](#imagery)
+  * [Wireframes](#Wireframes)
 
 * [Features](#features)
   * [General Features on Each Page](#general-features-on-each-page)
@@ -84,6 +87,12 @@ I used the Raleway font from Google Fonts. I thought it worked well with the sty
 
 The imagery is mainly of Sussie and her fascilities, showing a friendly and peaceful enviroment.
 
+### Wirerfames
+
+Wireframes of the index page was made:
+
+<img src="readmeimages/wirerfame 1.PNG" height="350" /> <img src="readmeimages/Wireframe 2.PNG" height="350" />
+
 ## Features
 
 The web page has a "Home" page with a greeting from the bussiness owner explaining what it is she does. There is also a page costumers can leave reviews. Services and prices can be found on another page. There is also a page with contact information as well as pages for signing up and signing in and out of an account.
@@ -148,7 +157,7 @@ Type 'git clone' into the terminal and then paste the link you copied in step 3.
 
 ## Testing
 
-
+Information about testing can be found [here](TESTING.md)
 
 ## Credits
 
