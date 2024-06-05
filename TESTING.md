@@ -64,8 +64,10 @@ CSS Validator passed without error
 
  #### Frequent Visitor Goals:
 
-  * To be able to keep updated with changes in services.
-    - The service page can be adapted to changes in services.
+|User goal |Result   |Pass / Fail |
+| --- | --- | --- |
+|To be able to keep updated with changes in services. | The service page can be adapted to changes in services.| Pass |
+|  | |  |
 
 
 ### Full Testing
@@ -73,52 +75,50 @@ CSS Validator passed without error
  #### Chrome Developer Tools
   Throughout the project Chrome Developer Tools were used to test how the project looked on different devices. The final deployed version works on the most common devices.
 
+
  #### Links
-  * Testing all the links in the navigatin menu
-    - All working.
 
-  * Sign up link in Sign in page
-    - Working
-
-  * Sign in link in Sign up page
-    - Working
-
-  * Links to social accounts and booking in Contact page
-    - Working
+|Feature|Result |Pass / Fail |
+| --- | --- | --- |
+|Links in the navigatin menu. |All links lead to expected destination. | Pass |
+|Sign up link in Sign in page.|Link leads to sign up page. | Pass |
+|Sign in link in Sign up page.|Link leads to sign up page. | Pass |
+|Links to social accounts and booking in Contact page. |All links lead to expected destination.| Pass |
+|  | |  |
 
   #### Sign Up
-    * Sign Up
-      - Works
-    
-    * Verification e-mail
-      -Works
+
+|Feature|Result |Pass / Fail |
+| --- | --- | --- |
+|Sign Up|The user is able to sign up. | Pass |
+|Verification e-mail|A Verification e-mail is sent to e-mail added in sign up. It is possible to verify e-mail address inVerifikation link in e-mail  | Pass |
+|  | |  |
   
   #### Sign In Services
-    * Sign In
-      - Works
 
-    * Add and remove e-mail
-      - Works
-
-    * Sign out
-      - Works
-
-    * Changing password
-      - Works
+|Feature|Result |Pass / Fail |
+| --- | --- | --- |
+|Sign In|After signing up, the user can sign in to de page. | Pass |
+|Add and remove e-mail|It is possible to change and remove e-mail after signing in. | Pass |
+|Sign out|It is possible to sign out when signed in.| Pass |
+|Changing password|Function to change password works through "forgot password" function. E-mail for password change is sent to user. | Pass 
+|  | |  |
 
   #### Reviews
-    * Leave a review
-      - Works
-    
-    * Edit and delete you own reviews
-      - Works when signed in
 
-    * Read others reviews
-      - Works
+|Feature|Result |Pass / Fail |
+| --- | --- | --- |
+|Leave review|It is possible to leave a review after being signed in. | Pass |
+|Edit and delete you own reviews. |Users can edit and delete reviews when being signed in. Only changes can be made on reviews from logged in user | Pass |
+|Read others reviews|All reviews are shown after being published| Pass |
+|  | |  |
 
   #### Admin login
-    * Superuser login to Admin
-      - Works
+
+|Feature|Result |Pass / Fail |
+| --- | --- | --- |
+|Superuser login to Admin|Superusers can log in to the Admin page | Pass |
+|  | |  |
 
 
 ## BUGS
