@@ -2,7 +2,8 @@
 
 The Soulspark website is a page used to promote the Soulspark coaching services. It also serves as a source of information for costumers interested in buying coaching services.
 
-![Soulspark homepage](readmeimages/soulsparkpage.PNG) 
+ <img src="readmeimages/soulsparkpage.PNG" width="1000"/> 
+
 
 [Link to deplpoyed site](https://soulspark-2b23afca50ab.herokuapp.com/)
 ---
@@ -73,7 +74,8 @@ Frequent Visitor Goals:
 The client go to pick colour scheme from this page: https://visme.co/blog/website-color-schemes/
 She had three she liked better. I picked the one I thought it worked best with her logo.
 
-![Colour](readmeimages/Color%20Soulspark.PNG) 
+ <img src="readmeimages/Color Soulspark.PNG" width="600"/> 
+
 
 ### Typography
 
@@ -95,11 +97,25 @@ Wireframes of the index page was made:
 
 ## Features
 
-The web page has a "Home" page with a greeting from the bussiness owner explaining what it is she does. There is also a page costumers can leave reviews. Services and prices can be found on another page. There is also a page with contact information as well as pages for signing up and signing in and out of an account.
+The web page has a "Home" page with a greeting from the bussiness owner explaining what it is she does. 
+
+There is also a page where costumers can leave and read reviews. In case of many reviews a pagination function is added.
+
+![Review](readmeimages/Reviews.PNG) 
+
+ Services and prices can be found on another page. 
+
+ <img src="readmeimages/prices.PNG" height="350" /> 
+ 
+ There is also a page with contact information as well as pages for signing up and signing in and out of an account.
+
 
 ### General features on each page
 
 The web page has a navigation menu, making it easy to navigate between pages.
+
+ <img src="readmeimages/menu.PNG" height="50" /> 
+
 
 ### Future Implementations
 
